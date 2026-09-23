@@ -179,12 +179,12 @@ main, .site-header, .site-footer {
 .date-days {
   display: block;
   font-family: var(--display); font-style: italic; font-weight: 500;
-  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-size: clamp(2.4rem, 4vw, 3rem);
   font-variant-numeric: lining-nums;
   color: var(--accent);
   white-space: nowrap;
 }
-.date-months { display: block; margin-top: 0.4rem; font-size: 0.9rem; color: var(--ink-soft); }
+.date-months { display: block; margin-top: 0.4rem; font-size: 1rem; color: var(--ink-soft); }
 
 .event-row-title { font-family: var(--display); font-style: italic; font-size: 1.6rem; line-height: 1.15; }
 .event-row-title a { text-decoration: none; }
@@ -206,7 +206,7 @@ main, .site-header, .site-footer {
 .event-row.is-next .event-row-image { grid-column: 2; grid-row: 1 / span 3; }
 .event-row.is-next .next-label { grid-column: 1; margin: 0; }
 .event-row.is-next .next-label { display: block; }
-.event-row.is-next .date-days { font-size: clamp(3.4rem, 10vw, 6.75rem); }
+.event-row.is-next .date-days { font-size: clamp(3.4rem, 8vw, 6rem); }
 .event-row.is-next .event-row-title { font-size: clamp(1.9rem, 4vw, 2.7rem); }
 .event-row.is-next .event-row-teaser { font-size: 1.15rem; }
 .event-row.is-next .event-row-image { width: clamp(9rem, 22vw, 16rem); }
@@ -257,7 +257,7 @@ details.past summary::marker { color: var(--accent); }
 
 .event-header { margin: clamp(1.5rem, 5vw, 3rem) 0 2.5rem; }
 .event-header .date-block { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 1.25rem; margin-bottom: 0.75rem; }
-.event-header .date-days { font-size: clamp(3.5rem, 11vw, 7.5rem); }
+.event-header .date-days { font-size: clamp(3.5rem, 8vw, 6rem); }
 .event-title { font-family: var(--display); font-style: italic; font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.02; max-width: 16em; }
 .event-teaser { margin: 1rem 0 0; font-size: 1.2rem; color: var(--ink-soft); max-width: 32em; }
 .event.is-past .date-days { color: var(--ink-soft); }

@@ -1,5 +1,4 @@
 ---
-# Past event, from gustavobrotango.com/reisen-2/. English and Spanish are drafts for his review.
 title: Tango Escape – Kreta
 date: 2026-08-31T00:00:00
 end: 2026-09-06T00:00:00

@@ -1,5 +1,4 @@
 ---
-# Past event, from gustavobrotango.com/reisen-2/. English and Spanish are drafts for his review.
 title: Tango Escape – Paros
 date: 2026-08-24T00:00:00
 end: 2026-08-30T00:00:00

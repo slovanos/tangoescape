@@ -1,5 +1,4 @@
 ---
-# From gustavobrotango.com/reisen-2/. The English text is a draft for his review.
 title: Tango Escape – La Dersentina
 date: 2026-10-01T18:00:00
 end: 2026-10-04T15:30:00

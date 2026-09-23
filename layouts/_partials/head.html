@@ -7,6 +7,9 @@
 {{- end -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{- if site.Params.noindex }}
+<meta name="robots" content="noindex">
+{{- end }}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ $title }} – {{ site.Title }}{{ end }}</title>
 <meta name="description" content="{{ $desc | plainify }}">
 <meta name="theme-color" content="#fffaf5">

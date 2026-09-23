@@ -70,3 +70,5 @@ defaultContentLanguageInSubdir = false   # German at /, English at /en/, Spanish
 [params]
   # Used as the event UID domain in calendar files. Keep it stable.
   calendarDomain = "tangoescape.com"
+  # Preview: keeps every page out of search engines. Set to false at launch.
+  noindex = true

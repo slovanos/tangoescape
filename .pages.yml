@@ -63,6 +63,7 @@ content:
         label: Starts
         type: date
         required: true
+        description: To show only the dates, set the start and end times to 00:00.
         options:
           time: true
           format: "yyyy-MM-dd'T'HH:mm:ss"

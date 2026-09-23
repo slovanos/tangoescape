@@ -1,7 +1,10 @@
-{{- /* Returns start/end as time values plus display strings for the big date. */ -}}
+{{- /* Start/end times and big-date strings. Start and end both at 00:00 = date-only (allDay). */ -}}
 {{- $start := .Date -}}
 {{- $end := $start -}}
 {{- with .Params.end -}}{{- $end = time.AsTime . -}}{{- end -}}
+{{- $allDay := and (eq ($start.Format "15:04:05") "00:00:00") (eq ($end.Format "15:04:05") "00:00:00") -}}
+{{- $until := $end -}}
+{{- if $allDay }}{{ $until = $end.AddDate 0 0 1 }}{{ end -}}
 {{- $sameDay := eq ($start.Format "2006-01-02") ($end.Format "2006-01-02") -}}
 {{- $sameMonth := eq ($start.Format "2006-01") ($end.Format "2006-01") -}}
 {{- $sameYear := eq $start.Year $end.Year -}}
@@ -20,9 +23,11 @@
 {{- return dict
   "start" $start
   "end" $end
+  "until" $until
+  "allDay" $allDay
   "sameDay" $sameDay
   "days" $days
   "months" $months
-  "iso" ($end.Format "2006-01-02T15:04:05-07:00")
-  "isPast" ($end.Before now)
+  "iso" ($until.Format "2006-01-02T15:04:05-07:00")
+  "isPast" ($until.Before now)
 -}}

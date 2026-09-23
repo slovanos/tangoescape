@@ -2,6 +2,13 @@
 {{- $t := partial "event/times.html" . -}}
 {{- $txt := partial "event/text.html" . -}}
 {{- $utc := "20060102T150405Z" -}}
+{{- $dtstart := printf "DTSTART:%s" ($t.start.UTC.Format $utc) -}}
+{{- $dtend := printf "DTEND:%s" ($t.end.UTC.Format $utc) -}}
+{{- if $t.allDay -}}
+  {{- /* date-only: local dates, the end date is exclusive */ -}}
+  {{- $dtstart = printf "DTSTART;VALUE=DATE:%s" ($t.start.Format "20060102") -}}
+  {{- $dtend = printf "DTEND;VALUE=DATE:%s" ($t.until.Format "20060102") -}}
+{{- end -}}
 {{- $parts := slice -}}
 {{- with .Params.venue }}{{ $parts = $parts | append . }}{{ end -}}
 {{- with .Params.address }}{{ $parts = $parts | append . }}{{ end -}}
@@ -16,8 +23,8 @@
   "BEGIN:VEVENT"
   (printf "UID:%s@%s" (.File.ContentBaseName) site.Params.calendarDomain)
   (printf "DTSTAMP:%s" (now.UTC.Format $utc))
-  (printf "DTSTART:%s" ($t.start.UTC.Format $utc))
-  (printf "DTEND:%s" ($t.end.UTC.Format $utc))
+  $dtstart
+  $dtend
   (printf "URL:%s" .Permalink)
 -}}
 {{- range $fields -}}

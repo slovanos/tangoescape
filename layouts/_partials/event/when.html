@@ -2,7 +2,12 @@
 {{- $t := partial "event/times.html" . -}}
 {{- $from := $t.start | time.Format "15:04" -}}
 {{- $to := $t.end | time.Format "15:04" -}}
-{{- if $t.sameDay -}}
+{{- if $t.allDay -}}
+  <time datetime="{{ $t.start.Format "2006-01-02" }}">{{ $t.start | time.Format ":date_full" }}</time>
+  {{- if not $t.sameDay }}<br>
+  {{ T "until" }} <time datetime="{{ $t.end.Format "2006-01-02" }}">{{ $t.end | time.Format ":date_full" }}</time>
+  {{- end -}}
+{{- else if $t.sameDay -}}
   <time datetime="{{ $t.start.Format "2006-01-02T15:04" }}">{{ $t.start | time.Format ":date_full" }}</time><br>
   {{- if eq $from $to }}{{ T "time_at" (dict "Time" $from) }}{{ else }}{{ T "time_range" (dict "From" $from "To" $to) }}{{ end -}}
 {{- else -}}

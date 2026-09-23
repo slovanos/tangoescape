@@ -19,7 +19,7 @@
 <meta property="og:description" content="{{ $desc | plainify }}">
 <meta property="og:url" content="{{ .Permalink }}">
 {{- with .Params.image }}
-<meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image" content="{{ strings.TrimPrefix "/" . | absURL }}">
 {{- end }}
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 {{- with site.GetPage "/events" }}

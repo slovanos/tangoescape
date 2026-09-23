@@ -6,16 +6,21 @@
    validates the date format Hugo needs (seconds included).
 3. Parses every generated .ics calendar file.
 4. Confirms every language got its home, events and event pages.
+5. Checks that every internal link (href, src, CSS url()) resolves to a file
+   in the build, with the site served from a subpath like /tangoescape/.
 
 Needs: hugo (extended, >= 0.166), python packages pyyaml and icalendar
   pip install pyyaml icalendar
 """
 import glob
+import os
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+from html.parser import HTMLParser
+from urllib.parse import unquote, urljoin, urlsplit
 
 import yaml
 
@@ -26,6 +31,8 @@ except ImportError:
 
 LANGS = {"de": "", "en": "en/", "es": "es/"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$")
+# Subpath build, like the preview, to catch root-absolute links.
+BASE = "http://localhost/tangoescape/"
 problems = []
 
 
@@ -36,7 +43,7 @@ def fail(msg):
 # 1. Build -------------------------------------------------------------------
 out = tempfile.mkdtemp(prefix="tango-build-")
 res = subprocess.run(
-    ["hugo", "--gc", "--minify", "--destination", out],
+    ["hugo", "--gc", "--minify", "--baseURL", BASE, "--destination", out],
     capture_output=True, text=True,
 )
 log = res.stdout + res.stderr
@@ -99,6 +106,50 @@ for lang, prefix in LANGS.items():
         if not glob.glob(f"{out}/{prefix}{rel}"):
             fail(f"missing page for {lang}: /{prefix}{rel}")
 
+# 5. Internal links ----------------------------------------------------------------
+class LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        self.links += [v for k, v in attrs if k in ("href", "src") and v]
+
+
+def page_url(path):
+    rel = os.path.relpath(path, out).replace(os.sep, "/")
+    return BASE + (rel[: -len("index.html")] if rel.endswith("index.html") else rel)
+
+
+def check_link(src, link):
+    """Checks one link; returns True if it points at the site itself."""
+    if link.startswith("#") or link.split(":", 1)[0] in ("mailto", "tel", "data"):
+        return False
+    link = re.sub(r"^webcal://", "http://", link)
+    url = urlsplit(urljoin(page_url(src), link))
+    if url.scheme not in ("http", "https") or url.netloc != urlsplit(BASE).netloc:
+        return False  # external
+    base_path = urlsplit(BASE).path
+    if not url.path.startswith(base_path):
+        fail(f"{page_url(src)}: link '{link}' points outside {base_path}")
+        return True
+    target = os.path.join(out, unquote(url.path[len(base_path):]))
+    if url.path.endswith("/") or os.path.isdir(target):
+        target = os.path.join(target, "index.html")
+    if not os.path.isfile(target):
+        fail(f"{page_url(src)}: broken link '{link}'")
+    return True
+
+
+n_links = 0
+for f in glob.glob(f"{out}/**/*.html", recursive=True):
+    parser = LinkParser()
+    parser.feed(open(f, encoding="utf-8").read())
+    n_links += sum(check_link(f, link) for link in parser.links)
+for f in glob.glob(f"{out}/**/*.css", recursive=True):
+    css = open(f, encoding="utf-8").read()
+    n_links += sum(check_link(f, link) for link in re.findall(r"url\(\s*['\"]?([^'\")]+)", css))
+
 shutil.rmtree(out, ignore_errors=True)
 
 if problems:
@@ -106,4 +157,4 @@ if problems:
     for p in problems:
         print("  -", p)
     sys.exit(1)
-print(f"✓ all good: build clean, {len(slugs)} events, {len(ics_files)} calendar files, {len(LANGS)} languages")
+print(f"✓ all good: build clean, {len(slugs)} events, {len(ics_files)} calendar files, {len(LANGS)} languages, {n_links} internal links")

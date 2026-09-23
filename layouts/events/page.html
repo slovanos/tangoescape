@@ -17,7 +17,7 @@
   <p class="past-note" data-when-past{{ if not $t.isPast }} hidden{{ end }}>{{ T "event_over" }}</p>
 
   {{- with .Params.image }}
-  <img class="event-image" src="{{ . | relURL }}" alt="">
+  <img class="event-image" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="">
   {{- end }}
 
   <div class="event-grid">

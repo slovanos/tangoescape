@@ -5,7 +5,7 @@ title: Datenschutzerklärung
 
 ## Verantwortlicher
 
-Gustavo Bronzino, Anschrift siehe [Impressum](/impressum/), E-Mail: info@tangoescape.com
+Gustavo Bronzino, Anschrift siehe [Impressum]({{< relref "impressum" >}}), E-Mail: info@tangoescape.com
 
 ## Hosting
 

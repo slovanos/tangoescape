@@ -15,6 +15,6 @@
     </p>
   </div>
   {{- with $p.Params.image }}
-  <img class="event-row-image" src="{{ . | relURL }}" alt="" loading="lazy" decoding="async">
+  <img class="event-row-image" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="" loading="lazy" decoding="async">
   {{- end }}
 </li>

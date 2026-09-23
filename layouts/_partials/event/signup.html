@@ -1,0 +1,16 @@
+{{- /* Registration button: an e-mail address becomes a pre-filled mail, anything else a link. */ -}}
+{{- $txt := partial "event/text.html" . -}}
+{{- with .Params.signup -}}
+  {{- $href := . -}}
+  {{- if not (strings.HasPrefix . "http") -}}
+    {{- $href = printf "mailto:%s?subject=%s" . (replace (urlquery (printf "%s%s" (T "register_mail_subject") $txt.title)) "+" "%20") -}}
+  {{- end -}}
+  {{- if $.Params.soldout -}}
+    <p class="soldout">{{ T "sold_out" }}</p>
+    <a class="button button-quiet" href="{{ $href | safeURL }}">{{ T "waitlist" }}</a>
+  {{- else -}}
+    <a class="button" href="{{ $href | safeURL }}">{{ T "register" }}</a>
+  {{- end -}}
+{{- else -}}
+  {{- if $.Params.soldout }}<p class="soldout">{{ T "sold_out" }}</p>{{ end -}}
+{{- end -}}

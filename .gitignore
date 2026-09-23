@@ -1,0 +1,8 @@
+/public/
+/resources/_gen/
+.hugo_build.lock
+.DS_Store
+
+# Private notes for the owner and Claude Code (the repo is public). Never commit.
+/CLAUDE.md
+/devinfo/

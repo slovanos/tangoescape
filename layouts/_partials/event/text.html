@@ -1,0 +1,25 @@
+{{- /*
+  Returns the event's texts in the current language.
+  German (the default language) lives in the main fields and the file body;
+  other languages live under `translations.<lang>` and fall back to German
+  when a field is left empty.
+*/ -}}
+{{- $lang := .Language.Lang -}}
+{{- $tr := dict -}}
+{{- with .Params.translations -}}{{- with index . $lang -}}{{- $tr = . -}}{{- end -}}{{- end -}}
+{{- $body := .Content -}}
+{{- $fallback := false -}}
+{{- if ne $lang hugo.Sites.Default.Language.Lang -}}
+  {{- with $tr.body -}}
+    {{- $body = $.RenderString (dict "display" "block") . -}}
+  {{- else -}}
+    {{- $fallback = true -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict
+  "title" (or $tr.title .Title)
+  "teaser" (or $tr.teaser .Params.teaser "")
+  "audience" (or $tr.audience .Params.audience "")
+  "body" $body
+  "bodyIsFallback" (and $fallback (ne (trim (string .RawContent) " \n") ""))
+-}}

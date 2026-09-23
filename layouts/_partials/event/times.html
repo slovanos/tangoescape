@@ -1,0 +1,28 @@
+{{- /* Returns start/end as time values plus display strings for the big date. */ -}}
+{{- $start := .Date -}}
+{{- $end := $start -}}
+{{- with .Params.end -}}{{- $end = time.AsTime . -}}{{- end -}}
+{{- $sameDay := eq ($start.Format "2006-01-02") ($end.Format "2006-01-02") -}}
+{{- $sameMonth := eq ($start.Format "2006-01") ($end.Format "2006-01") -}}
+{{- $sameYear := eq $start.Year $end.Year -}}
+{{- $days := $start.Format "02" -}}
+{{- $months := $start | time.Format "January 2006" -}}
+{{- if not $sameDay -}}
+  {{- $days = printf "%s–%s" ($start.Format "02") ($end.Format "02") -}}
+  {{- if not $sameMonth -}}
+    {{- if $sameYear -}}
+      {{- $months = printf "%s – %s" ($start | time.Format "January") ($end | time.Format "January 2006") -}}
+    {{- else -}}
+      {{- $months = printf "%s – %s" ($start | time.Format "January 2006") ($end | time.Format "January 2006") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict
+  "start" $start
+  "end" $end
+  "sameDay" $sameDay
+  "days" $days
+  "months" $months
+  "iso" ($end.Format "2006-01-02T15:04:05-07:00")
+  "isPast" ($end.Before now)
+-}}

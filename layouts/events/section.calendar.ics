@@ -1,0 +1,3 @@
+{{- $split := partial "event/split.html" . -}}
+{{- /* upcoming events plus the last few past ones, so recent entries don't vanish from subscribed calendars */ -}}
+{{- partial "event/ics-calendar.html" ($split.upcoming | append (first 10 $split.past)) -}}

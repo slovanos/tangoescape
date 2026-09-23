@@ -1,0 +1,25 @@
+{{- $current := . -}}
+<header class="site-header">
+  <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      {{- with site.GetPage "/events" }}
+      <li><a href="{{ .RelPermalink }}"{{ if or (eq $current .) (and $current.IsPage (eq $current.Section "events")) }} aria-current="page"{{ end }}>{{ T "nav_events" }}</a></li>
+      {{- end }}
+      {{- with site.GetPage "/about" }}
+      <li><a href="{{ .RelPermalink }}"{{ if eq $current . }} aria-current="page"{{ end }}>{{ T "nav_about" }}</a></li>
+      {{- end }}
+      <li><a href="#kontakt">{{ T "nav_contact" }}</a></li>
+    </ul>
+  </nav>
+  <nav class="lang-switch" aria-label="{{ T "language" }}">
+    <ul>
+      {{- range hugo.Sites }}
+        {{- $lang := .Language.Lang }}
+        {{- $target := .Home }}
+        {{- range $current.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $target = . }}{{ end }}{{ end }}
+        <li><a href="{{ $target.RelPermalink }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.Label }}"{{ if eq $lang site.Language.Lang }} aria-current="true"{{ end }}>{{ $lang }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>

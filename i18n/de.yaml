@@ -1,0 +1,39 @@
+nav_events: Termine
+nav_about: Über mich
+nav_contact: Kontakt
+skip_to_content: Zum Inhalt springen
+language: Sprache
+
+upcoming: Kommende Termine
+next_event: Nächster Termin
+all_events: Alle Termine
+past_events: Vergangene Termine
+no_upcoming: Gerade stehen keine Termine fest. Schreib mir, wenn du bei den nächsten dabei sein willst.
+event_over: Dieser Termin ist vorbei.
+details: Details und Anmeldung
+
+when: Wann
+where: Wo
+with: Mit
+audience: Für wen
+price: Preis
+open_map: Karte öffnen
+time_at: "{{ .Time }} Uhr"
+time_range: "{{ .From }}–{{ .To }} Uhr"
+
+register: Anmelden
+register_mail_subject: "Anmeldung: "
+sold_out: Ausgebucht
+waitlist: Auf die Warteliste
+add_to_calendar: In meinen Kalender
+subscribe_calendar: Alle Termine im Kalender abonnieren
+only_german: Die ausführliche Beschreibung gibt es bisher nur auf Deutsch.
+
+more_about: Mehr über mich
+contact_heading: Kontakt
+write_me: Schreib mir
+imprint: Impressum
+privacy: Datenschutz
+not_found_title: Seite nicht gefunden
+not_found_text: Diese Adresse gibt es nicht (mehr). Die aktuellen Termine findest du hier.
+until: bis

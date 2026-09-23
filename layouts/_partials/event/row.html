@@ -1,0 +1,20 @@
+{{- /* One event in a list. Context: dict "page" "featured" */ -}}
+{{- $p := .page -}}
+{{- $t := partial "event/times.html" $p -}}
+{{- $txt := partial "event/text.html" $p -}}
+<li class="event-row{{ if .featured }} is-next{{ end }}" data-event-end="{{ $t.iso }}">
+  <p class="next-label">{{ T "next_event" }}</p>
+  {{ partial "event/date-block.html" $p }}
+  <div class="event-row-body">
+    <h3 class="event-row-title"><a href="{{ $p.RelPermalink }}">{{ $txt.title }}</a></h3>
+    {{ with $txt.teaser }}<p class="event-row-teaser">{{ . }}</p>{{ end }}
+    <p class="event-row-meta">
+      {{- with $p.Params.venue }}<span>{{ . }}</span>{{ end -}}
+      {{- with $p.Params.teachers }}<span>{{ T "with" }} {{ . }}</span>{{ end -}}
+      {{- if $p.Params.soldout }}<span class="soldout">{{ T "sold_out" }}</span>{{ end -}}
+    </p>
+  </div>
+  {{- with $p.Params.image }}
+  <img class="event-row-image" src="{{ . | relURL }}" alt="" loading="lazy" decoding="async">
+  {{- end }}
+</li>

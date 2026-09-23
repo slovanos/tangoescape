@@ -1,0 +1,10 @@
+{{- /* All events of the current language, split into upcoming (soonest first)
+       and past (most recent first), judged at build time. The browser script
+       re-checks this on every visit, so nothing stale is shown between builds. */ -}}
+{{- $up := slice -}}
+{{- $past := slice -}}
+{{- range (where site.RegularPages "Section" "events").ByDate -}}
+  {{- $t := partial "event/times.html" . -}}
+  {{- if $t.isPast -}}{{- $past = $past | append . -}}{{- else -}}{{- $up = $up | append . -}}{{- end -}}
+{{- end -}}
+{{- return dict "upcoming" $up "past" (sort $past "Date" "desc") -}}

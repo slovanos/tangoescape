@@ -1,0 +1,36 @@
+{{- /* Returns the lines of one VEVENT (RFC 5545) for the page in context. */ -}}
+{{- $t := partial "event/times.html" . -}}
+{{- $txt := partial "event/text.html" . -}}
+{{- $utc := "20060102T150405Z" -}}
+{{- $parts := slice -}}
+{{- with .Params.venue }}{{ $parts = $parts | append . }}{{ end -}}
+{{- with .Params.address }}{{ $parts = $parts | append . }}{{ end -}}
+{{- $location := delimit $parts ", " -}}
+{{- $desc := printf "%s\n\n%s" $txt.teaser .Permalink -}}
+{{- $fields := slice
+  (slice "SUMMARY" $txt.title)
+  (slice "LOCATION" $location)
+  (slice "DESCRIPTION" $desc)
+-}}
+{{- $lines := slice
+  "BEGIN:VEVENT"
+  (printf "UID:%s@%s" (.File.ContentBaseName) site.Params.calendarDomain)
+  (printf "DTSTAMP:%s" (now.UTC.Format $utc))
+  (printf "DTSTART:%s" ($t.start.UTC.Format $utc))
+  (printf "DTEND:%s" ($t.end.UTC.Format $utc))
+  (printf "URL:%s" .Permalink)
+-}}
+{{- range $fields -}}
+  {{- $v := index . 1 -}}
+  {{- if $v -}}
+    {{- $v = replace $v "\\" "\\\\" -}}
+    {{- $v = replace $v ";" "\\;" -}}
+    {{- $v = replace $v "," "\\," -}}
+    {{- $v = replace $v "\n" "\\n" -}}
+    {{- $line := printf "%s:%s" (index . 0) $v -}}
+    {{- /* fold long lines: 60 characters, continuation lines start with a space */ -}}
+    {{- $lines = $lines | append (delimit (findRE `(?s).{1,60}` $line) "\r\n ") -}}
+  {{- end -}}
+{{- end -}}
+{{- $lines = $lines | append "END:VEVENT" -}}
+{{- return $lines -}}

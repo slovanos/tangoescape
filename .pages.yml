@@ -1,0 +1,223 @@
+# Pages CMS configuration — https://pagescms.org/docs/
+# Every save in the CMS is a commit to this repository, which triggers the
+# deploy workflow. The website updates about a minute later.
+
+media:
+  input: static/images
+  output: /images
+  rename: safe
+  categories: [image]
+
+components:
+  # Texts of an event in one extra language. Anything left empty
+  # falls back to the German text on the website.
+  translation:
+    type: object
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: teaser
+        label: Short description
+        type: text
+      - name: audience
+        label: Who it's for
+        type: string
+      - name: body
+        label: Full description
+        type: rich-text
+        options:
+          format: markdown
+
+actions:
+  - name: rebuild
+    label: Rebuild website
+    workflow: deploy.yml
+    confirm:
+      title: Rebuild the website?
+      message: This normally happens by itself after every save. Use it only if a change doesn't show up after a few minutes.
+      button: Rebuild
+
+content:
+  # ---------------------------------------------------------------- Events
+  - name: events
+    label: Events
+    type: collection
+    path: content/events
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date, venue]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title (German)
+        type: string
+        required: true
+      - name: date
+        label: Starts
+        type: date
+        required: true
+        options:
+          time: true
+          format: "yyyy-MM-dd'T'HH:mm:ss"
+      - name: end
+        label: Ends
+        type: date
+        description: For a one-day event, use the same day with the end time.
+        options:
+          time: true
+          format: "yyyy-MM-dd'T'HH:mm:ss"
+      - name: teachers
+        label: With
+        type: string
+        description: "Teachers and DJs, e.g. Leandro Furlan, Gaia Pisauro, Gustavo Bronzino"
+      - name: venue
+        label: Venue
+        type: string
+      - name: address
+        label: Address
+        type: string
+        description: Used for the "Open map" link.
+      - name: price
+        label: Price
+        type: string
+        description: "Written the same in all languages, e.g. 400 € / 170 € (1 day)"
+      - name: signup
+        label: Registration
+        type: string
+        description: An e-mail address (opens a pre-filled e-mail) or a link to a form.
+      - name: soldout
+        label: Fully booked
+        type: boolean
+        description: Shows "Fully booked" and turns the button into a waiting-list link.
+      - name: image
+        label: Image
+        type: image
+      - name: teaser
+        label: Short description (German)
+        type: text
+        description: One sentence shown in the event list.
+      - name: audience
+        label: Who it's for (German)
+        type: string
+        description: e.g. Für Singles, alle Levels
+      - name: body
+        label: Full description (German)
+        type: rich-text
+        options:
+          format: markdown
+      - name: translations
+        label: Translations
+        type: object
+        fields:
+          - name: en
+            label: English
+            component: translation
+          - name: es
+            label: Español
+            component: translation
+
+  # ------------------------------------------------------------ Home page
+  - name: home-de
+    label: Home page (Deutsch)
+    type: file
+    path: content/de/_index.md
+    fields: &home
+      - name: title
+        label: Big title
+        type: string
+      - name: tagline
+        label: Line under the title
+        type: text
+      - name: body
+        label: Introduction
+        type: rich-text
+        options:
+          format: markdown
+  - name: home-en
+    label: Home page (English)
+    type: file
+    path: content/en/_index.md
+    fields: *home
+  - name: home-es
+    label: Home page (Español)
+    type: file
+    path: content/es/_index.md
+    fields: *home
+
+  # ----------------------------------------------------------- About page
+  - name: about-de
+    label: About me (Deutsch)
+    type: file
+    path: content/de/about.md
+    fields: &about
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: Photo
+        type: image
+      - name: body
+        label: Text
+        type: rich-text
+        options:
+          format: markdown
+  - name: about-en
+    label: About me (English)
+    type: file
+    path: content/en/about.md
+    fields: *about
+  - name: about-es
+    label: About me (Español)
+    type: file
+    path: content/es/about.md
+    fields: *about
+
+  # ------------------------------------------------------ Contact & legal
+  - name: settings
+    label: Contact & social
+    type: file
+    path: data/settings.yaml
+    fields:
+      - name: name
+        label: Name (footer and copyright)
+        type: string
+      - name: email
+        label: E-mail
+        type: string
+      - name: phone
+        label: Phone
+        type: string
+      - name: instagram
+        label: Instagram link
+        type: string
+      - name: facebook
+        label: Facebook link
+        type: string
+      - name: youtube
+        label: YouTube link
+        type: string
+  - name: impressum
+    label: Impressum
+    type: file
+    path: content/de/impressum.md
+    fields: &legal
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Text
+        type: rich-text
+        options:
+          format: markdown
+  - name: datenschutz
+    label: Datenschutz
+    type: file
+    path: content/de/datenschutz.md
+    fields: *legal

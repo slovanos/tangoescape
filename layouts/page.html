@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="page">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{- with .Params.image }}
+  <img class="page-image" src="{{ . | relURL }}" alt="">
+  {{- end }}
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}

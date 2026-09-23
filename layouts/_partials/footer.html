@@ -1,0 +1,28 @@
+{{- $s := hugo.Data.settings -}}
+{{- $de := hugo.Sites.Default -}}
+<footer class="site-footer" id="kontakt">
+  <h2 class="footer-heading">{{ T "contact_heading" }}</h2>
+  <div class="footer-grid">
+    <div class="footer-contact">
+      {{- with $s.email }}
+      <p><a class="footer-mail" href="mailto:{{ . }}">{{ . }}</a></p>
+      {{- end }}
+      {{- with $s.phone }}
+      <p><a href="tel:{{ replace . " " "" }}">{{ . }}</a></p>
+      {{- end }}
+    </div>
+    <ul class="footer-links">
+      {{- with $s.instagram }}<li><a href="{{ . }}" rel="me">Instagram</a></li>{{ end }}
+      {{- with $s.facebook }}<li><a href="{{ . }}" rel="me">Facebook</a></li>{{ end }}
+      {{- with $s.youtube }}<li><a href="{{ . }}" rel="me">YouTube</a></li>{{ end }}
+      {{- with site.GetPage "/events" }}{{ with .OutputFormats.Get "calendar" }}
+      <li><a href="{{ .Permalink | replaceRE `^https?://` "webcal://" }}">{{ T "subscribe_calendar" }}</a></li>
+      {{- end }}{{ end }}
+    </ul>
+  </div>
+  <p class="footer-legal">
+    <span>© {{ now.Year }} {{ with $s.name }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</span>
+    {{- with $de.GetPage "/impressum" }}<a href="{{ .RelPermalink }}" hreflang="de">{{ T "imprint" }}</a>{{ end }}
+    {{- with $de.GetPage "/datenschutz" }}<a href="{{ .RelPermalink }}" hreflang="de">{{ T "privacy" }}</a>{{ end }}
+  </p>
+</footer>

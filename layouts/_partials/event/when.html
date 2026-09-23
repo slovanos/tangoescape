@@ -1,0 +1,11 @@
+{{- /* Human-readable date and time for the facts box. */ -}}
+{{- $t := partial "event/times.html" . -}}
+{{- $from := $t.start | time.Format "15:04" -}}
+{{- $to := $t.end | time.Format "15:04" -}}
+{{- if $t.sameDay -}}
+  <time datetime="{{ $t.start.Format "2006-01-02T15:04" }}">{{ $t.start | time.Format ":date_full" }}</time><br>
+  {{- if eq $from $to }}{{ T "time_at" (dict "Time" $from) }}{{ else }}{{ T "time_range" (dict "From" $from "To" $to) }}{{ end -}}
+{{- else -}}
+  <time datetime="{{ $t.start.Format "2006-01-02T15:04" }}">{{ $t.start | time.Format ":date_full" }}, {{ T "time_at" (dict "Time" $from) }}</time><br>
+  {{ T "until" }} <time datetime="{{ $t.end.Format "2006-01-02T15:04" }}">{{ $t.end | time.Format ":date_full" }}, {{ T "time_at" (dict "Time" $to) }}</time>
+{{- end -}}

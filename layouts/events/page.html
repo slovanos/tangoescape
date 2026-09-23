@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{- $t := partial "event/times.html" . -}}
+{{- $txt := partial "event/text.html" . -}}
+<article class="event{{ if $t.isPast }} is-past{{ end }}" data-event-page data-event-end="{{ $t.iso }}">
+  {{- with .Parent }}
+  <p class="back-link"><a href="{{ .RelPermalink }}">{{ T "all_events" }}</a></p>
+  {{- end }}
+
+  <header class="event-header">
+    {{ partial "event/date-block.html" . }}
+    <div>
+      <h1 class="event-title">{{ $txt.title }}</h1>
+      {{ with $txt.teaser }}<p class="event-teaser">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+
+  <p class="past-note" data-when-past{{ if not $t.isPast }} hidden{{ end }}>{{ T "event_over" }}</p>
+
+  {{- with .Params.image }}
+  <img class="event-image" src="{{ . | relURL }}" alt="">
+  {{- end }}
+
+  <div class="event-grid">
+    <aside class="facts">
+      <dl>
+        <dt>{{ T "when" }}</dt>
+        <dd>{{ partial "event/when.html" . }}</dd>
+        {{- if or .Params.venue .Params.address }}
+        <dt>{{ T "where" }}</dt>
+        <dd>
+          {{- with .Params.venue }}{{ . }}<br>{{ end -}}
+          {{- with .Params.address }}{{ . }}<br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query={{ (cond (ne ($.Params.venue | default "") "") (printf "%s, %s" $.Params.venue .) .) | urlquery }}" rel="noopener">{{ T "open_map" }}</a>
+          {{- end -}}
+        </dd>
+        {{- end }}
+        {{- with .Params.teachers }}
+        <dt>{{ T "with" }}</dt>
+        <dd>{{ . }}</dd>
+        {{- end }}
+        {{- with $txt.audience }}
+        <dt>{{ T "audience" }}</dt>
+        <dd>{{ . }}</dd>
+        {{- end }}
+        {{- with .Params.price }}
+        <dt>{{ T "price" }}</dt>
+        <dd>{{ . }}</dd>
+        {{- end }}
+      </dl>
+      <div class="facts-actions" data-hide-when-past{{ if $t.isPast }} hidden{{ end }}>
+        {{ partial "event/signup.html" . }}
+        {{- with .OutputFormats.Get "calendar" }}
+        <a class="calendar-link" href="{{ .RelPermalink }}" download>{{ T "add_to_calendar" }}</a>
+        {{- end }}
+      </div>
+    </aside>
+
+    <div class="prose event-body">
+      {{- if $txt.bodyIsFallback }}
+      <p class="lang-note" lang="{{ site.Language.Lang }}">{{ T "only_german" }}</p>
+      <div lang="de">{{ $txt.body }}</div>
+      {{- else }}
+      {{ $txt.body }}
+      {{- end }}
+    </div>
+  </div>
+</article>
+{{ end }}

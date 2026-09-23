@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{- $split := partial "event/split.html" . -}}
+<section class="programme programme-full">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+
+  {{- with $split.upcoming }}
+  <ol class="event-list" data-upcoming data-feature-first data-empty-target="events-empty">
+    {{- range $i, $p := . }}
+    {{ partial "event/row.html" (dict "page" $p "featured" (eq $i 0)) }}
+    {{- end }}
+  </ol>
+  {{- end }}
+  <p class="empty-note" id="events-empty"{{ with $split.upcoming }} hidden{{ end }}>
+    {{ T "no_upcoming" }} <a href="#kontakt">{{ T "write_me" }}</a>
+  </p>
+
+  {{- with .OutputFormats.Get "calendar" }}
+  <p class="more-link"><a href="{{ .Permalink | replaceRE `^https?://` "webcal://" }}">{{ T "subscribe_calendar" }}</a></p>
+  {{- end }}
+
+  {{- with $split.past }}
+  <details class="past">
+    <summary>{{ T "past_events" }}</summary>
+    <ol class="event-list event-list-past">
+      {{- range . }}
+      {{ partial "event/row.html" (dict "page" . "featured" false) }}
+      {{- end }}
+    </ol>
+  </details>
+  {{- end }}
+</section>
+{{ end }}

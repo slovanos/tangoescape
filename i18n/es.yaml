@@ -1,0 +1,39 @@
+nav_events: Fechas
+nav_about: Sobre mí
+nav_contact: Contacto
+skip_to_content: Ir al contenido
+language: Idioma
+
+upcoming: Próximas fechas
+next_event: Próxima fecha
+all_events: Todas las fechas
+past_events: Fechas pasadas
+no_upcoming: Por ahora no hay fechas confirmadas. Escribime si querés enterarte de las próximas.
+event_over: Este evento ya pasó.
+details: Detalles e inscripción
+
+when: Cuándo
+where: Dónde
+with: Con
+audience: Para quién
+price: Precio
+open_map: Ver mapa
+time_at: "{{ .Time }} h"
+time_range: "{{ .From }}–{{ .To }} h"
+
+register: Inscribirme
+register_mail_subject: "Inscripción: "
+sold_out: Completo
+waitlist: Anotarme en lista de espera
+add_to_calendar: Agregar a mi calendario
+subscribe_calendar: Suscribirse a todas las fechas
+only_german: Por ahora la descripción completa está solo en alemán.
+
+more_about: Más sobre mí
+contact_heading: Contacto
+write_me: Escribime
+imprint: Aviso legal (Impressum)
+privacy: Privacidad (Datenschutz)
+not_found_title: Página no encontrada
+not_found_text: Esta dirección no existe (más). Las fechas actuales están acá.
+until: hasta

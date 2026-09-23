@@ -1,0 +1,15 @@
+{{- /* Wraps a list of event pages into a complete VCALENDAR string with CRLF line endings. */ -}}
+{{- $lines := slice
+  "BEGIN:VCALENDAR"
+  "VERSION:2.0"
+  (printf "PRODID:-//%s//Events//%s" site.Title (upper site.Language.Lang))
+  "CALSCALE:GREGORIAN"
+  "METHOD:PUBLISH"
+  (printf "X-WR-CALNAME:%s" site.Title)
+  "X-WR-TIMEZONE:Europe/Berlin"
+-}}
+{{- range . -}}
+  {{- $lines = $lines | append (partial "event/ics-lines.html" .) -}}
+{{- end -}}
+{{- $lines = $lines | append "END:VCALENDAR" -}}
+{{- return printf "%s\r\n" (delimit $lines "\r\n") -}}

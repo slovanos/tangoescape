@@ -1,0 +1,72 @@
+# Tango Escape — Hugo configuration
+# Docs: https://gohugo.io/configuration/
+
+baseURL = "https://tangoescape.com/"
+title = "Tango Escape"
+timeZone = "Europe/Berlin"   # event times without offset are read as Berlin time
+buildFuture = true           # events are dated in the future — they must be built
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "rss"]
+
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false   # German at /, English at /en/, Spanish at /es/
+
+[languages]
+  [languages.de]
+    weight = 1
+    label = "Deutsch"
+    locale = "de-DE"
+  [languages.en]
+    weight = 2
+    label = "English"
+    locale = "en-GB"
+  [languages.es]
+    weight = 3
+    label = "Español"
+    locale = "es-AR"
+
+# ---------------------------------------------------------------------------
+# Content layout
+#   content/de, content/en, content/es  -> pages written per language
+#   content/events                      -> ONE file per event, shared by all
+#                                          languages (translations live inside
+#                                          the file, see .pages.yml)
+# ---------------------------------------------------------------------------
+[[module.mounts]]
+  source = "content/de"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["de"]
+[[module.mounts]]
+  source = "content/en"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["en"]
+[[module.mounts]]
+  source = "content/es"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["es"]
+[[module.mounts]]
+  source = "content/events"
+  target = "content/events"
+  [module.mounts.sites.matrix]
+    languages = ["**"]
+
+# Each events list and each single event also get an .ics calendar file.
+[outputs]
+  home = ["html"]
+  section = ["html", "calendar"]
+  page = ["html"]
+
+[[cascade]]
+  outputs = ["html", "calendar"]
+  [cascade.target]
+    path = "{/events/**}"
+
+[markup.goldmark.renderer]
+  unsafe = true   # allow HTML coming from the CMS rich-text editor
+
+[params]
+  # Used as the event UID domain in calendar files. Keep it stable.
+  calendarDomain = "tangoescape.com"

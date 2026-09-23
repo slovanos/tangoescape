@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{- $split := partial "event/split.html" . -}}
+<section class="hero">
+  <h1 class="hero-title">
+    {{- $words := split .Title " " -}}
+    {{- range $i, $w := $words }}<span class="hero-word hero-word-{{ $i }}">{{ $w }}</span>{{ if lt (add $i 1) (len $words) }} {{ end }}{{ end -}}
+  </h1>
+  {{ with .Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+</section>
+
+<section class="programme" aria-labelledby="upcoming-heading">
+  <h2 id="upcoming-heading" class="section-heading">{{ T "upcoming" }}</h2>
+  {{- with $split.upcoming }}
+  <ol class="event-list" data-upcoming data-feature-first data-empty-target="home-empty">
+    {{- range $i, $p := first 4 . }}
+    {{ partial "event/row.html" (dict "page" $p "featured" (eq $i 0)) }}
+    {{- end }}
+  </ol>
+  {{- end }}
+  <p class="empty-note" id="home-empty"{{ with $split.upcoming }} hidden{{ end }}>
+    {{ T "no_upcoming" }} <a href="#kontakt">{{ T "write_me" }}</a>
+  </p>
+  {{- with site.GetPage "/events" }}
+  <p class="more-link"><a href="{{ .RelPermalink }}">{{ T "all_events" }}</a></p>
+  {{- end }}
+</section>
+
+{{- with .Content }}
+<section class="intro">
+  <div class="prose">{{ . }}</div>
+  {{- with site.GetPage "/about" }}
+  <p class="more-link"><a href="{{ .RelPermalink }}">{{ T "more_about" }}</a></p>
+  {{- end }}
+</section>
+{{- end }}
+{{ end }}

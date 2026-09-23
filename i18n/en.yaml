@@ -1,0 +1,39 @@
+nav_events: Events
+nav_about: About
+nav_contact: Contact
+skip_to_content: Skip to content
+language: Language
+
+upcoming: Upcoming events
+next_event: Next event
+all_events: All events
+past_events: Past events
+no_upcoming: No dates are fixed right now. Write to me if you'd like to hear about the next ones.
+event_over: This event has already taken place.
+details: Details and registration
+
+when: When
+where: Where
+with: With
+audience: Who it's for
+price: Price
+open_map: Open map
+time_at: "{{ .Time }}"
+time_range: "{{ .From }}–{{ .To }}"
+
+register: Register
+register_mail_subject: "Registration: "
+sold_out: Fully booked
+waitlist: Join the waiting list
+add_to_calendar: Add to my calendar
+subscribe_calendar: Subscribe to all events in your calendar
+only_german: The full description is only available in German for now.
+
+more_about: More about me
+contact_heading: Contact
+write_me: Write to me
+imprint: Legal notice (Impressum)
+privacy: Privacy (Datenschutz)
+not_found_title: Page not found
+not_found_text: This address doesn't exist (anymore). You'll find the current events here.
+until: until

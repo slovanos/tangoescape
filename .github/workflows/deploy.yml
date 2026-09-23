@@ -1,0 +1,71 @@
+# Builds the site with Hugo and publishes it to GitHub Pages.
+# Runs on every push to main (this includes every save in Pages CMS),
+# once a day so finished events drop out of "upcoming" lists,
+# and on demand (Actions tab, or the "Rebuild website" button in Pages CMS).
+name: Deploy website
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "15 2 * * *"   # daily, 02:15 UTC
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Sent automatically by Pages CMS; leave empty when running by hand.
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.166.0   # tested version; bump deliberately
+      TZ: Europe/Berlin
+    steps:
+      - name: Install Hugo
+        run: |
+          curl -sSLo "${RUNNER_TEMP}/hugo.tar.gz" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          mkdir -p "${RUNNER_TEMP}/hugo"
+          tar -C "${RUNNER_TEMP}/hugo" -xzf "${RUNNER_TEMP}/hugo.tar.gz"
+          echo "${RUNNER_TEMP}/hugo" >> "$GITHUB_PATH"
+
+      - name: Check out
+        uses: actions/checkout@v5
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Build
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

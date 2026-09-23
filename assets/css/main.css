@@ -126,16 +126,21 @@ main, .site-header, .site-footer {
 .lang-switch a[aria-current] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); }
 
 /* ---------- Hero: the name, walking in from both sides ---------- */
-.hero { padding-block: clamp(3rem, 10vw, 7.5rem) clamp(3rem, 8vw, 6rem); }
+/* "Escape" and the tagline share one indent. */
+.hero {
+  --hero-size: clamp(3.5rem, 12vw, 9rem);
+  --hero-indent: calc(var(--hero-size) * 0.9);
+  padding-block: clamp(3rem, 10vw, 7.5rem) clamp(3rem, 8vw, 6rem);
+}
 .hero-title {
   font-family: var(--display); font-style: italic; font-weight: 500;
-  font-size: clamp(3.5rem, 12vw, 9rem);
+  font-size: var(--hero-size);
   line-height: 0.86; letter-spacing: -0.02em;
 }
 .hero-word { display: block; }
-.hero-word-1 { padding-left: 0.9em; }
+.hero-word-1 { padding-left: var(--hero-indent); }
 .hero-tagline {
-  max-width: 30em; margin-top: 2.25rem; margin-left: clamp(0rem, 13vw, 10rem);
+  max-width: 30em; margin-top: 2.25rem; margin-left: var(--hero-indent);
   font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--ink-soft);
 }
 
@@ -300,7 +305,7 @@ details.past summary::marker { color: var(--accent); }
 .footer-contact p { margin: 0 0 0.4rem; }
 .footer-mail {
   font-family: var(--display); font-style: italic;
-  font-size: clamp(1.6rem, 5vw, 3rem); line-height: 1.1;
+  font-size: clamp(1.2rem, 4.5vw, 1.4rem); line-height: 1.1;
   text-decoration: none; overflow-wrap: anywhere;
 }
 .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
@@ -330,7 +335,7 @@ details.past summary::marker { color: var(--accent); }
   .event-row.is-next .event-row-image { grid-column: 1; grid-row: 1; width: 100%; }
   .event-grid { grid-template-columns: minmax(0, 1fr); }
   .facts { position: static; }
-  .hero-word-1 { padding-left: 0.6em; }
+  .hero { --hero-indent: calc(var(--hero-size) * 0.6); }
 }
 @media print {
   html { background: #fff; color: #000; }

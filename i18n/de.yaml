@@ -18,8 +18,8 @@ with: Mit
 audience: Für wen
 price: Preis
 open_map: Karte öffnen
-time_at: "{{ .Time }} Uhr"
-time_range: "{{ .From }}–{{ .To }} Uhr"
+time_at: "{{ .Time }}\u00a0Uhr"
+time_range: "{{ .From }}–{{ .To }}\u00a0Uhr"
 
 register: Anmelden
 register_mail_subject: "Anmeldung: "
@@ -32,6 +32,7 @@ only_german: Die ausführliche Beschreibung gibt es bisher nur auf Deutsch.
 more_about: Mehr über mich
 contact_heading: Kontakt
 write_me: Schreib mir
+main_site: "Unterricht, DJ und Reisen:"
 imprint: Impressum
 privacy: Datenschutz
 not_found_title: Seite nicht gefunden

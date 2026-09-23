@@ -10,6 +10,9 @@
       {{- with $s.phone }}
       <p><a href="tel:{{ replace . " " "" }}">{{ . }}</a></p>
       {{- end }}
+      {{- with $s.website }}
+      <p>{{ T "main_site" }} <a href="{{ . }}">{{ strings.TrimPrefix "www." (urls.Parse .).Host }}</a></p>
+      {{- end }}
     </div>
     <ul class="footer-links">
       {{- with $s.instagram }}<li><a href="{{ . }}" rel="me">Instagram</a></li>{{ end }}

@@ -18,8 +18,8 @@ with: Con
 audience: Para quién
 price: Precio
 open_map: Ver mapa
-time_at: "{{ .Time }} h"
-time_range: "{{ .From }}–{{ .To }} h"
+time_at: "{{ .Time }}\u00a0h"
+time_range: "{{ .From }}–{{ .To }}\u00a0h"
 
 register: Inscribirme
 register_mail_subject: "Inscripción: "
@@ -32,6 +32,7 @@ only_german: Por ahora la descripción completa está solo en alemán.
 more_about: Más sobre mí
 contact_heading: Contacto
 write_me: Escribime
+main_site: "Clases, DJ y viajes:"
 imprint: Aviso legal (Impressum)
 privacy: Privacidad (Datenschutz)
 not_found_title: Página no encontrada

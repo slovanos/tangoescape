@@ -11,7 +11,7 @@ PLZ Berlin
 
 ## Kontakt
 
-E-Mail: info@tangoescape.com  
+E-Mail: info@gustavobrotango.com  
 Telefon: +49 …
 
 ## Umsatzsteuer

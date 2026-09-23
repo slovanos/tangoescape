@@ -7,7 +7,7 @@ teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino
 venue: La Dersentina
 address: Dersentiner Allee 1, 18279 Lalendorf
 price: 400 € (Do–So) · 170 € (1 Tag), zzgl. Unterkunft
-signup: info@leandroygaia.com
+signup: info@gustavobrotango.com
 soldout: false
 image: ""
 teaser: Vier Tage Tango, Natur und gutes Essen – zwei Stunden von Berlin und Hamburg.

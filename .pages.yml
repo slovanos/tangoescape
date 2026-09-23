@@ -194,6 +194,10 @@ content:
       - name: phone
         label: Phone
         type: string
+      - name: website
+        label: Main website
+        type: string
+        description: Your main website, shown at the bottom of every page.
       - name: instagram
         label: Instagram link
         type: string

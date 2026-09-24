@@ -1,5 +1,5 @@
 ---
-title: Über mich
+title: Über uns
 image: ""
 ---
-Ich bin Gustavo, Tangolehrer und DJ in Berlin.
+Wir sind Gaia & Gustavo...

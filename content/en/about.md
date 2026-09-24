@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About us
 image: ""
 ---
-I'm Gustavo, a tango teacher and DJ based in Berlin.
+We are Gaia and Gustavo...

@@ -6,6 +6,7 @@ title = "Tango Escape"
 timeZone = "Europe/Berlin"   # event times without offset are read as Berlin time
 buildFuture = true           # events are dated in the future — they must be built
 enableRobotsTXT = true
+cleanDestinationDir = true   # remove stale files from public/ on every build
 disableKinds = ["taxonomy", "term", "rss"]
 
 defaultContentLanguage = "de"

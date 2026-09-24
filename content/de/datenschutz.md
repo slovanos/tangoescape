@@ -9,7 +9,7 @@ Gustavo Bronzino, Anschrift siehe [Impressum]({{< relref "impressum" >}}), E-Mai
 
 ## Hosting
 
-Diese Website wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Daten wie Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs und die aufgerufene Adresse, um die Website auszuliefern und abzusichern. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und zuverlässigen Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Dabei können Daten in die USA übermittelt werden. Weitere Informationen: GitHub Privacy Statement.
+Beim Aufruf der Seiten verarbeitet der Hosting-Anbieter technisch notwendige Daten wie Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs und die aufgerufene Adresse, um die Website auszuliefern und abzusichern. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und zuverlässigen Betrieb (Art. 6 Abs. 1 lit. f DSGVO).
 
 ## Keine Cookies, kein Tracking
 

@@ -58,6 +58,8 @@ if res.returncode != 0:
 cms = yaml.safe_load(open(".pages.yml"))
 events_schema = next(c for c in cms["content"] if c["name"] == "events")
 schema_keys = {f["name"] for f in events_schema["fields"]} - {"body"}
+# Pages CMS drops empty fields on save, so only required ones must be present
+required_keys = {f["name"] for f in events_schema["fields"] if f.get("required")}
 tr_fields = {f["name"] for f in cms["components"]["translation"]["fields"]}
 
 for path in sorted(glob.glob("content/events/*.md")):
@@ -66,11 +68,11 @@ for path in sorted(glob.glob("content/events/*.md")):
         fail(f"{path}: no front matter")
         continue
     fm = yaml.safe_load(parts[1], ) or {}
-    extra, missing = set(fm) - schema_keys, schema_keys - set(fm)
+    extra, missing = set(fm) - schema_keys, required_keys - set(fm)
     if extra:
         fail(f"{path}: fields not in .pages.yml: {sorted(extra)}")
     if missing:
-        fail(f"{path}: fields missing (CMS expects them): {sorted(missing)}")
+        fail(f"{path}: required fields missing: {sorted(missing)}")
     for key in ("date", "end"):
         val = fm.get(key)
         if val and not DATE_RE.match(str(val).replace(" ", "T")):

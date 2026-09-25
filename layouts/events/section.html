@@ -25,10 +25,6 @@
     {{ T "no_upcoming" }} <a href="#kontakt">{{ T "write_me" }}</a>
   </p>
 
-  {{- with .OutputFormats.Get "calendar" }}
-  <p class="more-link"><a href="{{ .Permalink | replaceRE `^https?://` "webcal://" }}">{{ T "subscribe_calendar" }}</a></p>
-  {{- end }}
-
   {{- with $split.past }}
   <details class="past">
     <summary>{{ T "past_events" }}</summary>

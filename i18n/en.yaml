@@ -29,7 +29,6 @@ register_mail_subject: "Registration: "
 sold_out: Fully booked
 waitlist: Join the waiting list
 add_to_calendar: Add to my calendar
-subscribe_calendar: Subscribe to all events in your calendar
 only_german: The full description is only available in German for now.
 
 more_about: More about us

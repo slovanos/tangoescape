@@ -29,7 +29,6 @@ register_mail_subject: "Anmeldung: "
 sold_out: Ausgebucht
 waitlist: Auf die Warteliste
 add_to_calendar: In meinen Kalender
-subscribe_calendar: Alle Termine im Kalender abonnieren
 only_german: Die ausführliche Beschreibung gibt es bisher nur auf Deutsch.
 
 more_about: Mehr über uns

@@ -1,5 +1,5 @@
 ---
 title: About us
-image: ""
+image: /images/gaia_and_gustavo.jpeg
 ---
 We are Gaia and Gustavo...

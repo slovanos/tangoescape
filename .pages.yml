@@ -77,7 +77,7 @@ content:
       - name: teachers
         label: With
         type: string
-        description: "Teachers and DJs, e.g. Leandro Furlan, Gaia Pisauro, Gustavo Bronzino"
+        description: "Teachers and DJs, e.g. Gaia Pisauro, Gustavo Bronzino"
       - name: venue
         label: Venue
         type: string
@@ -154,7 +154,7 @@ content:
 
   # ----------------------------------------------------------- About page
   - name: about-de
-    label: About me (Deutsch)
+    label: About us (Deutsch)
     type: file
     path: content/de/about.md
     fields: &about
@@ -170,12 +170,12 @@ content:
         options:
           format: markdown
   - name: about-en
-    label: About me (English)
+    label: About us (English)
     type: file
     path: content/en/about.md
     fields: *about
   - name: about-es
-    label: About me (Español)
+    label: About us (Español)
     type: file
     path: content/es/about.md
     fields: *about

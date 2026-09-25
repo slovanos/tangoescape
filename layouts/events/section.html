@@ -22,7 +22,7 @@
   {{- end }}
   {{- end }}
   <p class="empty-note" id="events-empty"{{ with $split.upcoming }} hidden{{ end }}>
-    {{ T "no_upcoming" }} <a href="#kontakt">{{ T "write_me" }}</a>
+    {{ T "no_upcoming" (dict "Link" (printf `<a href="#kontakt">%s</a>` (T "write_me"))) | safeHTML }}
   </p>
 
   {{- with $split.past }}

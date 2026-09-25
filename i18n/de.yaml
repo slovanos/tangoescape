@@ -11,7 +11,7 @@ all_events: Alle Termine
 past_events: Vergangene Termine
 in_germany: In Deutschland
 abroad: Im Ausland
-no_upcoming: Gerade stehen keine Termine fest. Schreib uns, wenn du bei den nächsten dabei sein willst.
+no_upcoming: "Gerade stehen keine Termine fest. {{ .Link }}, wenn du bei den nächsten dabei sein willst."
 event_over: Dieser Termin ist vorbei.
 details: Details und Anmeldung
 

@@ -11,7 +11,7 @@ all_events: All events
 past_events: Past events
 in_germany: In Germany
 abroad: Abroad
-no_upcoming: No dates are fixed right now. Write to us if you'd like to hear about the next ones.
+no_upcoming: "No dates are fixed right now. {{ .Link }} if you'd like to hear about the next ones."
 event_over: This event has already taken place.
 details: Details and registration
 
@@ -33,7 +33,7 @@ only_german: The full description is only available in German for now.
 
 more_about: More about us
 contact_heading: Contact
-write_me: Write us
+write_me: Write to us
 main_site: "Classes, DJ and trips:"
 imprint: Legal notice (Impressum)
 privacy: Privacy (Datenschutz)

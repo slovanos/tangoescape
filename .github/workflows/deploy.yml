@@ -1,6 +1,7 @@
 # Builds the site with Hugo and publishes it to GitHub Pages.
 # Runs on every push to main (this includes every save in Pages CMS),
-# once a day so finished events drop out of "upcoming" lists,
+# once a week so finished events move to the "past" list (the browser
+# script already hides them from "upcoming" lists in between),
 # and on demand (Actions tab, or the "Rebuild website" button in Pages CMS).
 name: Deploy website
 
@@ -8,7 +9,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "15 2 * * *"   # daily, 02:15 UTC
+    - cron: "15 2 * * 1"   # Mondays, 02:15 UTC: right after weekend events end
   workflow_dispatch:
     inputs:
       payload:

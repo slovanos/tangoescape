@@ -1,6 +1,6 @@
 {{- $current := . -}}
 <header class="site-header">
-  <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+  <a class="brand" href="{{ site.Home.RelPermalink }}"{{ if $current.IsHome }} aria-current="page"{{ end }}>{{ T "nav_home" }}</a>
   <nav class="site-nav" aria-label="Main">
     <ul>
       {{- with site.GetPage "/events" }}

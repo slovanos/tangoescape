@@ -12,7 +12,7 @@
 {{- end }}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ $title }} – {{ site.Title }}{{ end }}</title>
 <meta name="description" content="{{ $desc | plainify }}">
-<meta name="theme-color" content="#fffaf5">
+<meta name="theme-color" content="#f3e9df">
 <link rel="canonical" href="{{ .Permalink }}">
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">

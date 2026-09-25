@@ -4,12 +4,22 @@
   <h1 class="page-title">{{ .Title }}</h1>
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
 
-  {{- with $split.upcoming }}
-  <ol class="event-list" data-upcoming data-feature-first data-empty-target="events-empty">
-    {{- range $i, $p := . }}
-    {{ partial "event/row.html" (dict "page" $p "featured" (eq $i 0)) }}
-    {{- end }}
-  </ol>
+  {{- /* Upcoming events in two groups: Germany and abroad */ -}}
+  {{- $groups := slice
+    (dict "id" "in-germany" "title" (T "in_germany") "events" (where $split.upcoming "Params.abroad" "!=" true))
+    (dict "id" "abroad" "title" (T "abroad") "events" (where $split.upcoming "Params.abroad" true)) -}}
+  {{- range $groups }}
+  {{- $g := . }}
+  {{- with .events }}
+  <section class="event-group" data-group aria-labelledby="group-{{ $g.id }}">
+    <h2 class="section-heading" id="group-{{ $g.id }}">{{ $g.title }}</h2>
+    <ol class="event-list" data-upcoming data-feature-first data-empty-target="events-empty">
+      {{- range $i, $p := . }}
+      {{ partial "event/row.html" (dict "page" $p "featured" (eq $i 0)) }}
+      {{- end }}
+    </ol>
+  </section>
+  {{- end }}
   {{- end }}
   <p class="empty-note" id="events-empty"{{ with $split.upcoming }} hidden{{ end }}>
     {{ T "no_upcoming" }} <a href="#kontakt">{{ T "write_me" }}</a>

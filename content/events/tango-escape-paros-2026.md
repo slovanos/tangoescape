@@ -5,6 +5,7 @@ end: 2026-08-30T00:00:00
 teachers: Gaia Pisauro, Gustavo Bronzino
 venue: Eri Hotel
 address: 844 00 Paroikia, Paros, Griechenland
+abroad: true
 price: ""
 signup: ""
 soldout: false

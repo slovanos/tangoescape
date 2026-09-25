@@ -85,6 +85,10 @@ content:
         label: Address
         type: string
         description: Used for the "Open map" link.
+      - name: abroad
+        label: Abroad
+        type: boolean
+        description: Tick for trips outside Germany. The Reise page lists them under "Im Ausland".
       - name: price
         label: Price
         type: string

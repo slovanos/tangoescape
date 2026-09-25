@@ -5,6 +5,7 @@ end: 2026-09-06T00:00:00
 teachers: Gaia Pisauro, Gustavo Bronzino
 venue: Kernos Beach Hotel & Bungalows
 address: 700 07 Malia, Kreta, Griechenland
+abroad: true
 price: ""
 signup: ""
 soldout: false

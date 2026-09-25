@@ -5,6 +5,7 @@ end: 2026-10-04T15:30:00
 teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino
 venue: La Dersentina
 address: Dersentiner Allee 1, 18279 Lalendorf
+abroad: false
 price: 400 € (Do–So) · 170 € (1 Tag), zzgl. Unterkunft
 signup: info@gustavobrotango.com
 soldout: false

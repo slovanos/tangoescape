@@ -180,8 +180,10 @@ content:
         label: E-mail
         type: string
       - name: phone
-        label: Phone
+        label: Phone numbers
         type: string
+        list: true
+        description: One number per line, e.g. +4915229432280 (Gustavo)
       - name: website
         label: Main website
         type: string

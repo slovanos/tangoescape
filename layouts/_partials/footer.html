@@ -7,8 +7,8 @@
       {{- with $s.email }}
       <p><a class="footer-mail" href="mailto:{{ . }}">{{ . }}</a></p>
       {{- end }}
-      {{- with $s.phone }}
-      <p><a href="tel:{{ replace . " " "" }}">{{ . }}</a></p>
+      {{- range $s.phone }}
+      <p><a href="tel:{{ replaceRE `[^+0-9]` "" . }}">{{ . }}</a></p>
       {{- end }}
       {{- with $s.website }}
       <p>{{ T "main_site" }} <a href="{{ . }}">{{ strings.TrimPrefix "www." (urls.Parse .).Host }}</a></p>
@@ -18,9 +18,6 @@
       {{- with $s.instagram }}<li><a href="{{ . }}" rel="me">Instagram</a></li>{{ end }}
       {{- with $s.facebook }}<li><a href="{{ . }}" rel="me">Facebook</a></li>{{ end }}
       {{- with $s.youtube }}<li><a href="{{ . }}" rel="me">YouTube</a></li>{{ end }}
-      {{- with site.GetPage "/events" }}{{ with .OutputFormats.Get "calendar" }}
-      <li><a href="{{ .Permalink | replaceRE `^https?://` "webcal://" }}">{{ T "subscribe_calendar" }}</a></li>
-      {{- end }}{{ end }}
     </ul>
   </div>
   <p class="footer-legal">

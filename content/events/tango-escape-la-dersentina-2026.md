@@ -36,11 +36,6 @@ translations:
       **La Dependencia (modern house, 350 m away):** twin room 185 € per person, single room 245 € (only 3 available).
 
       Bring your own towels.
-  es:
-    title: Tango Escape – La Dersentina
-    teaser: Cuatro días de tango, naturaleza y buena comida, a dos horas de Berlín y Hamburgo.
-    audience: Para quienes aman el tango
-    body: ""
 ---
 Wir fahren wieder ins **La Dersentina** bei Lalendorf: 50 Minuten von Rostock, zwei Stunden von Berlin oder Hamburg. Von Donnerstag, 1., bis Sonntag, 4. Oktober 2026 tanzen wir als geschlossene Gruppe – wir tanzen, lernen, kochen und essen zusammen.
 

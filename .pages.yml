@@ -120,9 +120,6 @@ content:
           - name: en
             label: English
             component: translation
-          - name: es
-            label: Español
-            component: translation
 
   # ------------------------------------------------------------ Home page
   - name: home-de
@@ -146,11 +143,6 @@ content:
     type: file
     path: content/en/_index.md
     fields: *home
-  - name: home-es
-    label: Home page (Español)
-    type: file
-    path: content/es/_index.md
-    fields: *home
 
   # ----------------------------------------------------------- About page
   - name: about-de
@@ -173,11 +165,6 @@ content:
     label: About us (English)
     type: file
     path: content/en/about.md
-    fields: *about
-  - name: about-es
-    label: About us (Español)
-    type: file
-    path: content/es/about.md
     fields: *about
 
   # ------------------------------------------------------ Contact & legal

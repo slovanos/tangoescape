@@ -10,7 +10,7 @@ cleanDestinationDir = true   # remove stale files from public/ on every build
 disableKinds = ["taxonomy", "term", "rss"]
 
 defaultContentLanguage = "de"
-defaultContentLanguageInSubdir = false   # German at /, English at /en/, Spanish at /es/
+defaultContentLanguageInSubdir = false   # German at /, English at /en/
 
 [languages]
   [languages.de]
@@ -21,14 +21,10 @@ defaultContentLanguageInSubdir = false   # German at /, English at /en/, Spanish
     weight = 2
     label = "English"
     locale = "en-GB"
-  [languages.es]
-    weight = 3
-    label = "Español"
-    locale = "es-AR"
 
 # ---------------------------------------------------------------------------
 # Content layout
-#   content/de, content/en, content/es  -> pages written per language
+#   content/de, content/en              -> pages written per language
 #   content/events                      -> ONE file per event, shared by all
 #                                          languages (translations live inside
 #                                          the file, see .pages.yml)
@@ -43,11 +39,6 @@ defaultContentLanguageInSubdir = false   # German at /, English at /en/, Spanish
   target = "content"
   [module.mounts.sites.matrix]
     languages = ["en"]
-[[module.mounts]]
-  source = "content/es"
-  target = "content"
-  [module.mounts.sites.matrix]
-    languages = ["es"]
 [[module.mounts]]
   source = "content/events"
   target = "content/events"

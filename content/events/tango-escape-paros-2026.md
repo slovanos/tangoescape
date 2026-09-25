@@ -25,19 +25,6 @@ translations:
       - 12 hours of tango classes and a práctica with Gaia and Gustavo
       - 5 milongas
       - Time for excursions, massages and lazy hours on the beach
-  es:
-    title: Tango Escape – Paros
-    teaser: Una semana de tango en las Cícladas – clases y milongas con Gaia y Gustavo, más mar y playa.
-    audience: Para todos los que aman bailar
-    body: |-
-      Una semana de tango en Paros, quizás la más linda de las Cícladas: historia antigua, arquitectura cicládica, playas, mar azul profundo y atardeceres.
-
-      ## La semana
-
-      - Alojamiento en el Eri Hotel, con desayuno o media pensión
-      - 12 horas de clases de tango y una práctica con Gaia y Gustavo
-      - 5 milongas
-      - Tiempo para excursiones, masajes y horas tranquilas en la playa
 ---
 Eine Woche Tango auf Paros, der wohl schönsten aller Kykladeninseln – mit antiker Geschichte, Kykladenarchitektur, traumhaften Stränden, tiefblauem Meer und Sonnenuntergängen.
 

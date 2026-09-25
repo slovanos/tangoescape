@@ -25,19 +25,6 @@ translations:
       - 12 hours of tango classes and a práctica with Gaia and Gustavo
       - 5 milongas
       - Time for excursions, massages and the beach
-  es:
-    title: Tango Escape – Creta
-    teaser: Una semana de tango frente a la playa de Malia – clases y milongas con Gaia y Gustavo.
-    audience: Para amantes del baile
-    body: |-
-      Una semana de tango en Creta, entre un mar cristalino y una cultura llena de tradiciones.
-
-      ## La semana
-
-      - Habitación doble en el Kernos Beach Hotel & Bungalows, frente a la playa, con media pensión (desayuno y cena)
-      - 12 horas de clases de tango y una práctica con Gaia y Gustavo
-      - 5 milongas
-      - Tiempo para excursiones, masajes y la playa
 ---
 Eine Woche Tango auf Kreta, zwischen kristallklarem Meer und einer Kultur voller Traditionen.
 

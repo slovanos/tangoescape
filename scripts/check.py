@@ -29,7 +29,7 @@ try:
 except ImportError:
     icalendar = None
 
-LANGS = {"de": "", "en": "en/", "es": "es/"}
+LANGS = {"de": "", "en": "en/"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$")
 # Subpath build, like the preview, to catch root-absolute links.
 BASE = "http://localhost/tangoescape/"

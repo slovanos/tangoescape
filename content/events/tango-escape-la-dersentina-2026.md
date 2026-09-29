@@ -7,7 +7,7 @@ venue: La Dersentina
 address: Dersentiner Allee 1, 18279 Lalendorf
 abroad: false
 price: 400 € (Do–So) · 170 € (1 Tag), zzgl. Unterkunft
-signup: info@gustavobrotango.com
+signup: info@tangoescape.com
 soldout: false
 image: /images/events/la-dersentina.jpg
 teaser: Vier Tage Tango, Natur und gutes Essen – zwei Stunden von Berlin und Hamburg.

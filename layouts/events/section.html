@@ -25,7 +25,10 @@
     {{ T "no_upcoming" (dict "Link" (printf `<a href="#kontakt">%s</a>` (T "write_me"))) | safeHTML }}
   </p>
 
-  {{- with $split.past }}
+  {{- /* past_events in settings limits the list; missing shows all, 0 hides it */ -}}
+  {{- $past := $split.past -}}
+  {{- with hugo.Data.settings }}{{ if isset . "past_events" }}{{ $past = first (int .past_events) $past }}{{ end }}{{ end -}}
+  {{- with $past }}
   <details class="past">
     <summary>{{ T "past_events" }}</summary>
     <ol class="event-list event-list-past">

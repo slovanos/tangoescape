@@ -221,6 +221,10 @@ content:
       - name: youtube
         label: YouTube link
         type: string
+      - name: past_events
+        label: Past trips shown
+        type: number
+        description: How many past trips the Reise page lists, most recent first. Leave empty to show all.
   - name: impressum
     label: Impressum
     type: file

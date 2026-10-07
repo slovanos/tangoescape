@@ -13,4 +13,12 @@ Bei einigen unserer Reisen kochen wir auch selbst für die Teilnehmer:innen. Gut
 
 Im Sommer suchen wir besondere Orte, an denen man nicht nur Tango tanzen, sondern auch entspannen und die Umgebung genießen kann – am Meer, in der Natur oder bei gemeinsamen Ausflügen.
 
-**Wir lieben Tango. Wir lieben das Reisen. Und wir lieben es, beides miteinander zu verbinden.**
+**Wir lieben Tango. Wir lieben das Reisen. Und wir lieben es, beides miteinander zu verbinden.**  
+  
+Unser Team
+
+**Leandro – Tangolehrer**  
+Leandro kommt aus La Plata, Argentinien, und unterrichtet seit 2005 Tango. Ein großartiger Lehrer, wunderbarer Tänzer und verlässlicher Kollege, der uns auf vielen unserer TangoEscape-Reisen begleitet. Mit seiner Erfahrung, seiner Ruhe und seinem feinen Gespür für Tango ist er aus unserem Team kaum noch wegzudenken.
+
+**Manon – Yogalehrerin**  
+Manon ist diejenige, die nach einer langen Tangonacht am nächsten Morgen Körper und Seele wieder in Ordnung bringt. Mit ihren Yoga-Einheiten sorgt sie dafür, dass wir uns bewegen, durchatmen, entspannen – und anschließend wieder bereit für den nächsten Tag voller Tango sind.

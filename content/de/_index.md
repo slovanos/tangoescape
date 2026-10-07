@@ -4,7 +4,7 @@ tagline: |-
   Gemeinsam reisen, tanzen und eine gute Zeit haben.
   Wochen, Wochenenden in Deutschland und darüber hinaus.
 ---
-Unsere Tango-Wochen und Wochenenden führen uns an besondere Orte in Deutschland und im Ausland. 
+Unsere Tango-Wochen und Wochenenden führen uns an besondere Orte in Deutschland und im Ausland.
 
 In kleinen Gruppen verbinden wir intensiven Unterricht und Workshops mit Praktikas, Milongas und genügend Zeit für Begegnung und Erholung.
 

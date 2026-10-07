@@ -13,7 +13,8 @@ team:
 ---
 Wir sind Gaia und Gustavo – Tango-Lehrer:innen, DJs und leidenschaftliche Reisende.
 
-Seit 2021 organisieren wir Tango Escapes an verschiedenen Orten in Deutschland. Im Sommer reisen wir auch in andere Länder und verbinden unsere Leidenschaft für Tango mit schönen Orten, Natur, gutem Essen und gemeinsamen Erlebnissen.  
+Seit 2021 organisieren wir Tango Escapes an verschiedenen Orten in Deutschland. Im Sommer reisen wir auch in andere Länder und verbinden unsere Leidenschaft für Tango mit schönen Orten, Natur, gutem Essen und gemeinsamen Erlebnissen.
+
 Gaia kommt aus Rom, Italien, und lebt seit 2002 in Berlin. Gustavo kommt aus Rosario, Argentinien, und lebt seit 2018 in Berlin. Der Tango hat uns zusammengebracht – und unsere gemeinsame Liebe zum Reisen hat uns dazu inspiriert, besondere Reisen für Menschen zu gestalten, die Tango genauso lieben wie wir.
 
 Unsere Tango Escapes in Deutschland dauern in der Regel drei oder vier Tage. Neben unseren Tango-Kursen und Milongas möchten wir eine entspannte und persönliche Atmosphäre schaffen, in der man tanzen, neue Menschen kennenlernen und gemeinsam eine schöne Zeit verbringen kann.

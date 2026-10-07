@@ -1,5 +1,15 @@
 ---
 title: Tango Escape
-tagline: Tango weekends, workshops and milongas – in Berlin and out in the countryside.
+tagline: |-
+  Travel together, dance together, and have a wonderful time.
+  Tango weeks and weekends in Germany and beyond.
 ---
-Tango is a way of embracing someone and walking together. On our Tango Escapes we take a few days for exactly that: out of the city, dancing, learning and eating at the same table.
+Our Tango weeks and weekends take us to special places in Germany and abroad.
+
+In small groups, we combine intensive classes and workshops with practicas, milongas, and plenty of time to connect, relax, and simply enjoy being together.
+
+It’s not only about developing your dancing, but also about everything that Tango means to us: connection, exchange, joy, and community.
+
+Sharing meals, relaxing, laughing, dancing, and spending a special time together.
+
+We want to create spaces where people can meet, dance together, connect, and feel truly welcome.

@@ -40,3 +40,12 @@ privacy: Privacy (Datenschutz)
 not_found_title: Page not found
 not_found_text: This address doesn't exist (anymore). You'll find the current events here.
 until: until
+
+newsletter_heading: Newsletter
+newsletter_text: We'll write to you as soon as a new trip is set.
+newsletter_email: E-mail address
+newsletter_submit: Subscribe
+newsletter_consent: "I'd like to receive the newsletter by e-mail. I can unsubscribe at any time. More in our {{ .Link }}."
+newsletter_privacy: privacy policy
+newsletter_success: Almost done. Please confirm your sign-up with the link in the e-mail we've just sent you.
+newsletter_error: Sorry, that didn't work. Please try again later or write to us.

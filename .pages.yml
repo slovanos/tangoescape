@@ -225,6 +225,10 @@ content:
         label: Past trips shown
         type: number
         description: How many past trips the Reise page lists, most recent first. Leave empty to show all.
+      - name: newsletter_form
+        label: Newsletter form address
+        type: string
+        description: "The address of your EmailOctopus form (the https://… part inside the form code). Leave empty to hide the newsletter sign-up on the home page."
   - name: impressum
     label: Impressum
     type: file

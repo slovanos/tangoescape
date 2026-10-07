@@ -40,3 +40,12 @@ privacy: Datenschutz
 not_found_title: Seite nicht gefunden
 not_found_text: Diese Adresse gibt es nicht (mehr). Die aktuellen Termine findest du hier.
 until: bis
+
+newsletter_heading: Newsletter
+newsletter_text: Wir schreiben dir, sobald eine neue Reise feststeht.
+newsletter_email: E-Mail-Adresse
+newsletter_submit: Anmelden
+newsletter_consent: "Ich möchte den Newsletter per E-Mail bekommen. Abmelden kann ich mich jederzeit. Mehr dazu in der {{ .Link }}."
+newsletter_privacy: Datenschutzerklärung
+newsletter_success: Fast geschafft. Bitte bestätige deine Anmeldung über den Link in der E-Mail, die wir dir gerade geschickt haben.
+newsletter_error: Das hat leider nicht geklappt. Bitte versuch es später noch einmal oder schreib uns.

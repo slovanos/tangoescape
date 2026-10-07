@@ -1,0 +1,30 @@
+{{- /* Our own sign-up form for EmailOctopus: nothing loads from them until someone submits */ -}}
+{{- with hugo.Data.settings.newsletter_form }}
+{{- $privacy := "" }}
+{{- with hugo.Sites.Default.GetPage "/datenschutz" }}
+  {{- $privacy = printf `<a href="%s" hreflang="de">%s</a>` .RelPermalink (T "newsletter_privacy") }}
+{{- end }}
+<section class="newsletter" aria-labelledby="newsletter-heading">
+  <h2 id="newsletter-heading" class="section-heading">{{ T "newsletter_heading" }}</h2>
+  <p>{{ T "newsletter_text" }}</p>
+  <form class="newsletter-form" action="{{ . }}" method="post" data-newsletter
+        data-success="{{ T "newsletter_success" }}" data-error="{{ T "newsletter_error" }}">
+    <label for="newsletter-email">{{ T "newsletter_email" }}</label>
+    <div class="newsletter-row">
+      <input id="newsletter-email" type="email" name="field_0" required autocomplete="email">
+      <button class="button" type="submit">{{ T "newsletter_submit" }}</button>
+    </div>
+    <div class="newsletter-hp" aria-hidden="true">
+      <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="off">
+    </div>
+    <p class="newsletter-consent">
+      <input id="newsletter-consent" type="checkbox" name="consent" required>
+      <label for="newsletter-consent">{{ T "newsletter_consent" (dict "Link" $privacy) | safeHTML }}</label>
+    </p>
+  </form>
+  <p class="newsletter-status" role="status"></p>
+</section>
+{{- with resources.Get "js/newsletter.js" | js.Build (dict "minify" true) | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{- end }}
+{{- end }}

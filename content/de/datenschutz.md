@@ -1,8 +1,6 @@
 ---
 title: Datenschutzerklärung
 ---
-> **Vorlage – bitte vervollständigen und prüfen lassen**, z. B. mit einem Datenschutz-Generator oder einer Fachperson.
-
 ## Verantwortlicher
 
 Tango Escape GbR, Anschrift siehe [Impressum]({{< relref "impressum" >}}), E-Mail: [info@tangoescape.com](mailto:info@tangoescape.com)

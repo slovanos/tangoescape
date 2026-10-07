@@ -1,8 +1,6 @@
 ---
 title: Impressum
 ---
-> **Vorlage – bitte vervollständigen und prüfen lassen.** Pflichtangaben nach § 5 DDG.
-
 ## Angaben gemäß § 5 DDG
 
 Tango Escape GbR  

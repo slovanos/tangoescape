@@ -3,9 +3,11 @@ title: About us
 image: /images/gaia_and_gustavo.jpeg
 team:
   - name: Leandro
+    photo: /images/leandro.jpg
     role: Tango Teacher
     text: Leandro is from La Plata, Argentina, and has been teaching Tango since 2005. A fantastic teacher, wonderful dancer, and reliable colleague, he joins us on many of our TangoEscape trips. With his experience, calm presence, and deep understanding of Tango, it’s hard to imagine our team without him.
   - name: Manon
+    photo: /images/manon.jpg
     role: Yoga Teacher
     text: Manon is the one who puts body and soul back together the morning after a long night of Tango. With her yoga sessions, she gets us moving, breathing, and relaxing – so we’re refreshed and ready for another day full of Tango.
 ---

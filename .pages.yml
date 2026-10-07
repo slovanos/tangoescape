@@ -169,7 +169,7 @@ content:
         label: Team
         type: object
         list: true
-        description: Shown under the text, each person with a small round photo.
+        description: Shown under the text, each person with a small photo.
         fields:
           - name: name
             label: Name

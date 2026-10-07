@@ -256,7 +256,7 @@ details.past summary::marker { color: var(--accent); }
 .team { margin-top: clamp(2.5rem, 6vw, 4rem); }
 .team .team-list { list-style: none; padding: 0; display: grid; gap: 2rem; }
 .team-member { display: flex; gap: 1.25rem; align-items: flex-start; }
-.team-member .team-photo { flex: none; width: 6rem; aspect-ratio: 1; object-fit: cover; border-radius: 50%; margin: 0; }
+.team-member .team-photo { flex: none; width: 6rem; aspect-ratio: 1; object-fit: cover; border-radius: 3px; margin: 0; }
 .team-member h3 { margin: 0; }
 .team-member p { margin: 0; }
 .team-member .team-role { color: var(--ink-soft); margin-bottom: 0.5rem; }

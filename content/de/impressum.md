@@ -5,19 +5,12 @@ title: Impressum
 
 ## Angaben gemäß § 5 DDG
 
-Gustavo Bronzino  
-Straße Hausnummer  
-PLZ Berlin
+Tango Escape GbR  
+Schönwalder Straße 23  
+13347 Berlin  
+Deutschland
 
 ## Kontakt
 
-E-Mail: info@tangoescape.com
-Telefon: +49 …
-
-## Umsatzsteuer
-
-Falls vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE…
-
-## Verantwortlich für den Inhalt
-
-Gustavo Bronzino, Anschrift wie oben.
+E-Mail: [info@tangoescape.com](mailto:info@tangoescape.com)  
+Telefon: +49 174 5411067

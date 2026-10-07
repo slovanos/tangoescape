@@ -8,6 +8,15 @@
   {{ with .Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
 </section>
 
+{{- with .Content }}
+<section class="intro">
+  <div class="prose">{{ . }}</div>
+  {{- with site.GetPage "/about" }}
+  <p class="more-link"><a href="{{ .RelPermalink }}">{{ T "more_about" }}</a></p>
+  {{- end }}
+</section>
+{{- end }}
+
 <section class="programme" aria-labelledby="upcoming-heading">
   <h2 id="upcoming-heading" class="section-heading">{{ T "upcoming" }}</h2>
   {{- with $split.upcoming }}
@@ -24,13 +33,4 @@
   <p class="more-link"><a href="{{ .RelPermalink }}">{{ T "all_events" }}</a></p>
   {{- end }}
 </section>
-
-{{- with .Content }}
-<section class="intro">
-  <div class="prose">{{ . }}</div>
-  {{- with site.GetPage "/about" }}
-  <p class="more-link"><a href="{{ .RelPermalink }}">{{ T "more_about" }}</a></p>
-  {{- end }}
-</section>
-{{- end }}
 {{ end }}

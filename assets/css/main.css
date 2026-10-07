@@ -236,11 +236,8 @@ details.past summary {
 details.past summary::marker { color: var(--accent); }
 
 /* ---------- Intro on the home page ---------- */
-.intro { padding-bottom: clamp(3rem, 8vw, 6rem); border-top: 1px solid var(--line); padding-top: clamp(2.5rem, 6vw, 4.5rem); }
-.intro .prose > p:first-child {
-  font-size: clamp(1.3rem, 2.4vw, 1.6rem); line-height: 1.5;
-  max-width: 30em;
-}
+.intro { padding-bottom: clamp(3rem, 8vw, 6rem); }
+.intro + .programme { border-top: 1px solid var(--line); padding-top: clamp(2.5rem, 6vw, 4.5rem); }
 
 /* ---------- Prose ---------- */
 .prose { max-width: var(--measure); }

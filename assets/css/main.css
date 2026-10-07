@@ -249,9 +249,9 @@ details.past summary::marker { color: var(--accent); }
 
 /* ---------- Generic page ---------- */
 .page { padding-bottom: 5rem; }
-.page-image { max-width: 26rem; margin-bottom: 2rem; border-radius: 3px; }
+.page-image { max-width: min(26rem, 100%); margin-bottom: 2rem; border-radius: 3px; }
 
-/* Team on the about page: small round photo beside each person */
+/* Team on the about page: small photo beside each person */
 .team { margin-top: clamp(2.5rem, 6vw, 4rem); }
 .team .team-list { list-style: none; padding: 0; display: grid; gap: 2rem; }
 .team-member { display: flex; gap: 1.25rem; align-items: flex-start; }

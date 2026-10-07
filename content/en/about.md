@@ -1,6 +1,13 @@
 ---
 title: About us
 image: /images/gaia_and_gustavo.jpeg
+team:
+  - name: Leandro
+    role: Tango Teacher
+    text: Leandro is from La Plata, Argentina, and has been teaching Tango since 2005. A fantastic teacher, wonderful dancer, and reliable colleague, he joins us on many of our TangoEscape trips. With his experience, calm presence, and deep understanding of Tango, it’s hard to imagine our team without him.
+  - name: Manon
+    role: Yoga Teacher
+    text: Manon is the one who puts body and soul back together the morning after a long night of Tango. With her yoga sessions, she gets us moving, breathing, and relaxing – so we’re refreshed and ready for another day full of Tango.
 ---
 We are Gaia and Gustavo – tango teachers, DJs and passionate travellers.
 
@@ -14,11 +21,4 @@ For some of our trips, we also cook for our participants. For us, good food and 
 
 In summer, we look for special destinations where you can enjoy much more than tango – places where you can relax by the sea, connect with nature, explore the surroundings and share excursions and experiences together.
 
-**We love tango. We love travelling. And we love bringing the two together.**  
-  
-**Our Team**  
-**Leandro – Tango Teacher**  
-Leandro is from La Plata, Argentina, and has been teaching Tango since 2005. A fantastic teacher, wonderful dancer, and reliable colleague, he joins us on many of our TangoEscape trips. With his experience, calm presence, and deep understanding of Tango, it’s hard to imagine our team without him.
-
-**Manon – Yoga Teacher**  
-Manon is the one who puts body and soul back together the morning after a long night of Tango. With her yoga sessions, she gets us moving, breathing, and relaxing – so we’re refreshed and ready for another day full of Tango.
+**We love tango. We love travelling. And we love bringing the two together.**

@@ -165,6 +165,26 @@ content:
         type: rich-text
         options:
           format: markdown
+      - name: team
+        label: Team
+        type: object
+        list: true
+        description: Shown under the text, each person with a small round photo.
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: role
+            label: Role
+            type: string
+            description: e.g. Tangolehrer
+          - name: photo
+            label: Photo
+            type: image
+            description: A square photo works best.
+          - name: text
+            label: Text
+            type: text
   - name: about-en
     label: About us (English)
     type: file

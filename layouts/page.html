@@ -5,5 +5,29 @@
   <img class="page-image" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="">
   {{- end }}
   <div class="prose">{{ .Content }}</div>
+  {{- with .Params.team }}
+  <section class="team prose" aria-labelledby="team-heading">
+    <h2 id="team-heading">{{ T "our_team" }}</h2>
+    <ul class="team-list">
+      {{- range . }}
+      {{- $m := . }}
+      <li class="team-member">
+        {{- with .photo }}
+        <img class="team-photo" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $m.name }}">
+        {{- end }}
+        <div>
+          <h3>{{ .name }}</h3>
+          {{- with .role }}
+          <p class="team-role">{{ . }}</p>
+          {{- end }}
+          {{- with .text }}
+          <p class="team-text">{{ . }}</p>
+          {{- end }}
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
 </article>
 {{ end }}

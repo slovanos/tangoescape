@@ -113,15 +113,14 @@ main, .site-footer {
 /* ---------- Header ---------- */
 /* Full-width background; the content lines up with main */
 .site-header {
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.75rem 2rem;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 2rem;
   padding-block: 1.5rem;
   padding-inline: max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
   background: var(--header-bg);
 }
-.brand {
-  font-family: var(--display); font-style: italic; font-size: 1.5rem;
-  text-decoration: none; margin-right: auto;
-}
+.brand { display: block; line-height: 0; margin-right: auto; }
+/* The logo has a white background; multiply lets the header colour through */
+.brand img { height: 3.25rem; width: auto; mix-blend-mode: multiply; }
 .site-nav ul, .lang-switch ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; }
 .site-nav a, .lang-switch a { text-decoration: none; }
 .site-nav a[aria-current] { text-decoration: underline; text-decoration-color: var(--accent); }
@@ -331,7 +330,7 @@ details.past summary::marker { color: var(--accent); }
    screens, dashes included. Pinning the optical size low and the weight up
    keeps the Bodoni character with strokes that stay visible. Never use the
    display face for running text. */
-.brand, .hero-title, .section-heading, .page-title, .date-days,
+.hero-title, .section-heading, .page-title, .date-days,
 .event-row-title, .event-title, details.past summary, .prose h2,
 .footer-heading, .footer-mail {
   font-variation-settings: "opsz" 11;

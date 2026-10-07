@@ -164,6 +164,8 @@ main, .site-footer {
   font-family: var(--display); font-style: italic;
   font-size: clamp(2.6rem, 7vw, 4.75rem); line-height: 1;
   margin: clamp(1.5rem, 5vw, 3.5rem) 0 2rem;
+  /* Long German words ("Datenschutzerklärung") don't fit on phones */
+  overflow-wrap: break-word; hyphens: auto;
 }
 
 /* ---------- Event list: a programme, one line per date ---------- */

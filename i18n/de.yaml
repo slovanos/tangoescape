@@ -5,10 +5,10 @@ nav_contact: Kontakt
 skip_to_content: Zum Inhalt springen
 language: Sprache
 
-upcoming: Kommende Termine
-next_event: Nächster Termin
-all_events: Alle Termine
-past_events: Vergangene Termine
+upcoming: Kommende Reisen
+next_event: Nächste Reise
+all_events: Alle Reisen
+past_events: Vergangene Reisen
 in_germany: In Deutschland
 abroad: Im Ausland
 no_upcoming: "Gerade stehen keine Termine fest. {{ .Link }}, wenn du bei den nächsten dabei sein willst."

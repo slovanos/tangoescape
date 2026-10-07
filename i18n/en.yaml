@@ -5,10 +5,10 @@ nav_contact: Contact
 skip_to_content: Skip to content
 language: Language
 
-upcoming: Upcoming events
-next_event: Next event
-all_events: All events
-past_events: Past events
+upcoming: Upcoming trips
+next_event: Next trip
+all_events: All trips
+past_events: Past trips
 in_germany: In Germany
 abroad: Abroad
 no_upcoming: "No dates are fixed right now. {{ .Link }} if you'd like to hear about the next ones."

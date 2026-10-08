@@ -257,7 +257,7 @@ details.past summary::marker { color: var(--accent); }
 .team { margin-top: clamp(2.5rem, 6vw, 4rem); }
 .team .team-list { list-style: none; padding: 0; display: grid; gap: 2rem; }
 .team-member { display: flex; gap: 1.25rem; align-items: flex-start; }
-.team-member .team-photo { flex: none; width: 6rem; aspect-ratio: 1; object-fit: cover; border-radius: 3px; margin: 0; }
+.team-member .team-photo { flex: none; width: 10rem; aspect-ratio: 1; object-fit: cover; border-radius: 3px; margin: 0; }
 .team-member h3 { margin: 0; }
 .team-member p { margin: 0; }
 .team-member .team-role { color: var(--ink-soft); margin-bottom: 0.5rem; }
@@ -369,7 +369,7 @@ details.past summary::marker { color: var(--accent); }
   .hero { --hero-indent: calc(var(--hero-size) * 0.6); }
   /* Name and role beside the photo, the text below it */
   .team-member { display: flow-root; }
-  .team-member .team-photo { float: left; width: 4.5rem; margin: 0 1rem 0.5rem 0; }
+  .team-member .team-photo { float: left; width: 7rem; margin: 0 1rem 0.5rem 0; }
   .team-member .team-text { clear: left; padding-top: 0.75rem; }
 }
 @media print {

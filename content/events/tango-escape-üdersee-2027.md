@@ -16,7 +16,7 @@ translations:
   en:
     title: Tango Escape - Üdersee
     teaser: New Tango Escape in a beautiful location on Lake Üdersee near Berlin.
-    audience: For everyone who loves tango.
+    audience: Single/couple
     body: >-
       We are glad to invite you to our new special location in Üdersee bei
       Berlin!

@@ -6,7 +6,7 @@ teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino
 venue: La Dersentina
 address: Dersentiner Allee 1, 18279 Lalendorf
 abroad: false
-price: 400 € (Do–So) · 170 € (1 Tag), zzgl. Unterkunft
+price: 400 € Tango & Essen Paket
 signup: info@tangoescape.com
 soldout: false
 image: /images/la-dersentina.jpg

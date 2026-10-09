@@ -11,7 +11,7 @@ signup: info@tangoescape.com
 soldout: false
 image: /images/seenebel.webp
 teaser: Neuen Tango Escape an einem wunderschönen Ort am Üdersee bei Berlin
-audience: Für alle, die Tango lieben
+audience: Singles/Paare
 translations:
   en:
     title: Tango Escape - Üdersee
@@ -88,7 +88,6 @@ translations:
       14:00 Departure
 
 
-       
 
 
       ### **Accommodation – 3 Nights (Price per Person)**
@@ -102,7 +101,6 @@ translations:
       they can be rented for an additional **€10 per person**.
 
 
-       
 
 
       ### **Tango Package**
@@ -111,7 +109,6 @@ translations:
       **€250** per person
 
 
-       
 
 
       ### **Meals**
@@ -131,7 +128,6 @@ translations:
       own breakfast and lunch in the kitchens.
 
 
-       
 
 
       ### **Total Package Price (Per Person)**
@@ -143,7 +139,6 @@ translations:
       **€570** – Including breakfast (subject to confirmation)
 
 
-       
 
 
       Infos and Registration:
@@ -225,8 +220,8 @@ Falls sich nicht genügend Personen für das Frühstück anmelden, könnt ihr eu
 
 *Bettwäsche und Handtücher können optional für 10 € pro Person hinzugebucht werden.*
 
- 
 
-Infos und Anmeldung: info@tangoescape.com
+
+Infos und Anmeldung: [info@tangoescape.com](mailto:info@tangoescape.com)
 
 Org.: Gustavo Bronzino und Gaia Pisauro

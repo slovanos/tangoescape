@@ -6,7 +6,7 @@ teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino
 venue: Kulturgut Wilhelmsthal
 address: Wilhelmsthal 20, 99834 Gerstungen-Marksuhl
 abroad: false
-price: 400 € (Do–So) · 170 € (1 Tag), zzgl. Unterkunft
+price: 400 € Tango & Essen Paket
 signup: info@tangoescape.com
 soldout: false
 image: /images/01waldhaus6-1-1.jpg

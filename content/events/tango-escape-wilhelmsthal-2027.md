@@ -11,12 +11,12 @@ signup: info@tangoescape.com
 soldout: false
 image: /images/01waldhaus6-1-1.jpg
 teaser: mitten in Deutschland, hier kann man Tango und Natur genießen!
-audience: Für alle, die Tango lieben
+audience: Single/Paare
 translations:
   en:
     title: Tango Escape - Wilhelmsthal
     teaser: In the heart of Germany, where you can enjoy tango and nature!
-    audience: For everyone who loves tango.
+    audience: Single/couple
     body: >-
       We are glad to invite you  to our location in WILHELMSTHAL bei Eisenach!
 
@@ -212,7 +212,7 @@ Haupthaus
 3-Bett-Zimmer mit eigenem Bad 160 € pro Person (nur 1 verfügbar, wenn möglich)  
 4-Bett-Zimmer mit eigenem Bad 140 € pro Person (nur 1 verfügbar, wenn möglich)
 
- 
+
 
 Infos und Anmeldung: [info@tangoescape.com](mailto:info@tangoescape.com)
 

@@ -138,8 +138,8 @@ translations:
       4 beds room with privat bath 140€ per person (only 1 available, if
       possible )  
         
-      Info and registration: [info@tangoescape.com](mailto:info@tangoescape.com)
-
+      Info and registration:
+      [info@tangoescape.com](mailto:info@tangoescape.com)  
 
       Org: Gustavo Bronzino und Gaia Pisauro
 ---
@@ -213,5 +213,5 @@ Nur 1 Tag Freitag/Samstag
 
 4-Bett-Zimmer mit eigenem Bad 140 € pro Person (nur 1 verfügbar, wenn möglich)  
   
-Infos und Anmeldung: [info@tangoescape.com]([mailto:info@tangoescape.com)  
+Infos und Anmeldung: info@tangoescape.com  
 Org: Gustavo Bronzino und Gaia Pisauro

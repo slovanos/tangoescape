@@ -11,13 +11,13 @@ signup: info@tangoescape.com
 soldout: false
 image: /images/la-dersentina.jpg
 teaser: Vier Tage Tango, Natur und gutes Essen – zwei Stunden von Berlin und Hamburg.
-audience: Für alle, die Tango lieben
+audience: Single/Paare
 translations:
   en:
     title: Tango Escape - La Dersentina
     teaser: Four days of tango, nature, and good food — just two hours from Berlin
       and Hamburg.
-    audience: For everyone who loves tango.
+    audience: Single/couple
     body: >+
       We are delighted to invite you back to **La Dersentina in Lalendorf!**
 

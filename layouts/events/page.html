@@ -30,7 +30,7 @@
         <dd>
           {{- with .Params.venue }}{{ . }}<br>{{ end -}}
           {{- with .Params.address }}{{ . }}<br>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query={{ (cond (ne ($.Params.venue | default "") "") (printf "%s, %s" $.Params.venue .) .) | urlquery }}" rel="noopener">{{ T "open_map" }}</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query={{ (cond (ne ($.Params.venue | default "") "") (printf "%s, %s" $.Params.venue .) .) | urlquery }}" target="_blank" rel="noopener">{{ T "open_map" }}</a>
           {{- end -}}
         </dd>
         {{- end }}

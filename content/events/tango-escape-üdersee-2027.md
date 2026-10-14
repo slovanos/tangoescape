@@ -97,8 +97,7 @@ translations:
       the apartment’s living area or shared)**: €210**
 
 
-      Bed linen and towels are **not included** in the accommodation price:
-      they can be rented for an additional **€10 per person**.
+      Bed linen and towels are **included** in the accommodation price.
 
 
 
@@ -197,7 +196,7 @@ Wir freuen uns auf vier Tage voller Tango, schöner Begegnungen und gemeinsamer 
 
 - **Doppelzimmer mit zwei Einzelbetten, eigenem Bad und Zugang zu einer Küche** (entweder im Wohnbereich des Apartments oder als Gemeinschaftsküche): **210 €**
 
-Bettwäsche und Handtücher sind **nicht im Unterkunftspreis enthalten**. Sie können für zusätzlich **10 € pro Person** gemietet werden.
+Bettwäsche und Handtücher sind **im Unterkunftspreis enthalten**.
 
 ### **Tango-Paket**
 
@@ -217,8 +216,6 @@ Falls sich nicht genügend Personen für das Frühstück anmelden, könnt ihr eu
 **525 €** – Unterkunft (3 Nächte), Tango-Paket und Abendessen
 
 **570 €** – inklusive Frühstück (vorbehaltlich Bestätigung)
-
-*Bettwäsche und Handtücher können optional für 10 € pro Person hinzugebucht werden.*
 
 
 

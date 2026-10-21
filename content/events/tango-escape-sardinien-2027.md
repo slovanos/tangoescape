@@ -5,7 +5,7 @@ end: 2027-07-04T00:00:00
 teachers: Gaia Pisauro, Gustavo Bronzino
 venue: Baia di Nora
 address: Baia di Nora, Baia di Nora, 09050 Nora
-abroad: true
+abroad: false
 price: 290€ bis 31.12.26, 350€ bis 28.02.27, 390€ ab 01.03.27
 signup: info@tangoescape.com
 soldout: false

@@ -131,10 +131,6 @@ Wir laden dich ein, Teil dieser exklusiven Reise zu werden, die speziell für Ta
 - Early Bird bis zum 31. Januar 2027: 350 €
 - Ab dem 1. Februar 2027: 390 €
 
-**Milonga-Paket**
-
-- 60 €
-
 **Hotelangebot**
 
 - 660 € pro Person im Doppelzimmer inklusive Halbpension

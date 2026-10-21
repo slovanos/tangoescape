@@ -16,7 +16,7 @@ translations:
     title: Tango Escape – Crete
     teaser: A tango week right on the beach at Malia – classes and milongas with
       Gaia and Gustavo.
-    audience: For dance lovers
+    audience: Single/couple
     body: >+
       A week of tango on Crete, between crystal-clear sea and a culture rich in
       traditions.

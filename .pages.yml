@@ -88,7 +88,7 @@ content:
       - name: abroad
         label: Abroad
         type: boolean
-        description: Tick for trips outside Germany. The Reise page lists them under "Im Ausland".
+        description: Tick for every trip outside Germany (e.g. Greece, Italy). If left unticked, the Reise page lists the trip under "In Deutschland".
       - name: price
         label: Price
         type: string

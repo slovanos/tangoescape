@@ -5,7 +5,7 @@ end: 2027-09-12T00:00:00
 teachers: Gaia Pisauro, Gustavo Bronzino
 venue: Kernos Beach Hotel & Bungalows
 address: 700 07 Malia, Kreta, Griechenland
-abroad: false
+abroad: true
 price: 350€ bis 31.01.27, 390€ ab 01.02.27
 signup: info@tangoescape.com
 soldout: false

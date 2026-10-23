@@ -39,6 +39,12 @@ translations:
       ### TANGO PACKAGE
 
 
+      12 hours of tango lessons and one practicum with Gaia and Gustavo.
+
+
+      5 milongas to enjoy the magic of tango in a truly special atmosphere.
+
+
       **Super Early Bird — until December 31, 2026: €290 per person**
 
 
@@ -72,6 +78,10 @@ Viel Raum zum Tanzen.
 Und dazwischen das Meer, die Natur und das langsame Tempo Sardiniens.
 
 **TANGO-PAKET**
+
+12 Stunden Tango-Unterricht und eine Praktika mit Gaia und Gustavo.
+
+5 Milongas, um die Magie des Tangos in einer ganz besonderen Atmosphäre zu genieß
 
 **Super Promo bis 31.12.2026  290€ pro Person**
 

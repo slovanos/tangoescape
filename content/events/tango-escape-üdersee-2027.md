@@ -18,17 +18,23 @@ translations:
     teaser: New Tango Escape in a beautiful location on Lake Üdersee near Berlin.
     audience: Single/couple
     body: >-
-      We are glad to invite you to our new special location in Üdersee bei
-      Berlin!
+      ### **TANGO ESCAPE Üdersee | March 5–8, 2027**
+
+
+      **with Leandro & Gustavo & Gaia**
+
+
+      We are glad to invite you to our new Tango Escape in a beautiful location
+      in Üdersee near Berlin!
 
 
       Here you can enjoy tango and nature !!  
 
-      We will dance from Friday 05th Marz to Monday 8th Marz 2027.
+      We will dance from Friday March 5 to Monday March 8 2027.
 
 
-      We would like to keep a closed group who love tango and want to dance in a
-      happy atmosphere!  
+      We would like to have a group who love tango and want to dance in a happy
+      atmosphere!  
 
       Our idea is to dance and learn a lot, relax and chill together!!
 
@@ -41,7 +47,7 @@ translations:
 
       18:00 Arrivals  
 
-      19:30 Dinner  
+      19:00 Dinner  
 
       20:30 – 21:30 Guided Practica with Leandro y Gaia  
 
@@ -59,7 +65,7 @@ translations:
 
       17:00 – 18:30 Seminar with Leandro y Gaia  
 
-      19:30 Dinner  
+      19:00 Dinner  
 
       21:30 milonga with DJ Leandro
 
@@ -75,7 +81,7 @@ translations:
 
       17:00 – 18:30 Seminar with Leandro y Gaia  
 
-      19:30 Dinner  
+      19:00 Dinner  
 
       21:30 milonga with DJ Gustavo
 
@@ -88,6 +94,7 @@ translations:
       14:00 Departure
 
 
+       
 
 
       ### **Accommodation – 3 Nights (Price per Person)**
@@ -97,9 +104,10 @@ translations:
       the apartment’s living area or shared)**: €210**
 
 
-      Bed linen and towels are **included** in the accommodation price.
+      Bed linen and towels are **included** in the accommodation price.
 
 
+       
 
 
       ### **Tango Package**
@@ -108,6 +116,7 @@ translations:
       **€250** per person
 
 
+       
 
 
       ### **Meals**
@@ -127,6 +136,7 @@ translations:
       own breakfast and lunch in the kitchens.
 
 
+       
 
 
       ### **Total Package Price (Per Person)**
@@ -138,6 +148,7 @@ translations:
       **€570** – Including breakfast (subject to confirmation)
 
 
+       
 
 
       Infos and Registration:
@@ -146,7 +157,7 @@ translations:
 
       Org.: Gustavo Bronzino und Gaia Pisauro
 ---
-Wir freuen uns sehr, euch zu unserem neuen TangoEscape an einem wunderschönen Ort am Üdersee bei Berlin einzuladen!
+Wir freuen uns sehr, euch zu unserem neuen Tango Escape an einem wunderschönen Ort am Üdersee bei Berlin einzuladen!
 
 Hier verbinden wir Tango, Natur und gemeinsame Zeit – fernab vom Alltag und mitten im Grünen.
 
@@ -161,7 +172,7 @@ Unsere Idee ist ganz einfach: viel Tango tanzen, gemeinsam lernen, Neues ausprob
 ### **FREITAG | 5. März**
 
 **18:00 Uhr** – Anreise  
-**19:30 Uhr** – Gemeinsames Abendessen  
+**19:00 Uhr** – Gemeinsames Abendessen  
 **20:30–21:30 Uhr** – Angeleitete Praktika mit Leandro & Gaia  
 **Ab 21:30 Uhr** – Milonga mit DJ Gaia
 
@@ -171,7 +182,7 @@ Unsere Idee ist ganz einfach: viel Tango tanzen, gemeinsam lernen, Neues ausprob
 **13:00 Uhr** – Freizeit und Entspannung  
 **15:00–16:30 Uhr** – Angeleitete Praktika mit Gustavo  
 **17:00–18:30 Uhr** – Seminar mit Leandro & Gaia  
-**19:30 Uhr** – Gemeinsames Abendessen  
+**19:00 Uhr** – Gemeinsames Abendessen  
 **Ab 21:30 Uhr** – Milonga mit DJ Leandro
 
 ### **SONNTAG | 7. März**
@@ -180,7 +191,7 @@ Unsere Idee ist ganz einfach: viel Tango tanzen, gemeinsam lernen, Neues ausprob
 **13:00 Uhr** – Freizeit und Entspannung  
 **15:00–16:30 Uhr** – Angeleitete Praktika mit Gustavo  
 **17:00–18:30 Uhr** – Seminar mit Leandro & Gaia  
-**19:30 Uhr** – Gemeinsames Abendessen  
+**19:00 Uhr** – Gemeinsames Abendessen  
 **Ab 21:30 Uhr** – Milonga mit DJ Gustavo
 
 ### **MONTAG | 8. März**

@@ -18,134 +18,116 @@ translations:
     teaser: Join us for an unforgettable tango trip to Crete!
     audience: Single/couple
     body: >-
-      From September 6 to 12, 2027, join us for a unique adventure surrounded by
-      crystal-clear waters, fascinating culture, and the passion of tango.
+      From  **September 6th to** **September 12th , 2027**, experience a unique
+      adventure between crystal-clear seas, fascinating culture, and the passion
+      of tango. We invite you to join this exclusive journey, specially designed
+      for dance lovers and those who appreciate the natural beauty of Crete.
 
 
-      We invite you to be part of this exclusive trip, specially designed for
-      tango lovers and anyone eager to discover the natural beauty of Crete.
+      **What awaits you:**
 
 
-      ### What to Expect
+      - **Accommodation in a double room** at the beautiful **Kernos Beach Hotel
+      & Bungalows** with **half board** (breakfast and dinner included)
+
+      - **12 hours of tango lessons** and **1 guided practica** with **Gaia and
+      Gustavo** to improve your style and have fun together
+
+      - **5 Milongas** to enjoy the magic of tango in a very special atmosphere
+
+      - A unique opportunity to explore the island, make new friendships, and
+      immerse yourself in a culture rich in traditions. **We’ll take time for
+      excursions, massages, and the beach!**
 
 
-      - **Accommodation in a double room** at the beautiful Kernos Beach Hotel &
-      Bungalows, including half board (breakfast and dinner).
-
-      - **12 hours of tango classes and one practica** with Gaia and Gustavo,
-      giving you the opportunity to refine your dancing, learn new skills, and
-      have fun together.
-
-      - **4 milongas** where you can enjoy the magic of tango in a truly special
-      atmosphere.
-
-      - **Time to explore and unwind:** Discover the island, make new friends,
-      and immerse yourself in a culture rich in tradition. We’ll also make time
-      for excursions, massages, and relaxing days at the beach!
+      **Travel Details:**
 
 
-      ### Trip Details
+      - **Dates:** September 6th to September 12th , 2027
 
+      - **Location:** **Kernos Beach Hotel & Bungalows**, Malia 700 07, Crete,
+      Greece (Located directly on a beautiful sandy beach, with a large garden,
+      mini-golf, and tennis courts)
 
-      - **Dates:** September 6–12, 2027
+      - **Meals:** Half board (breakfast and dinner)
 
-      - **Location:** Kernos Beach Hotel & Bungalows, Malia 700 07, Crete,
-      Greece. The hotel is located right on a beautiful sandy beach and features
-      extensive gardens, a mini-golf course, and a tennis court.
-
-      - **Meals:** Half board (breakfast and dinner included).
-
-      - **Airport:** The nearest airport is Heraklion Airport, approximately 25
+      - **Airport:** The nearest airport is **Heraklion Airport**, about 25
       minutes from the hotel.
 
-      - **Minimum number of participants:** The trip will go ahead with a
-      minimum of 5 couples.
+
+      The trip will take place with a minimum of **10 Persons**.
 
 
-      ### Prices
-
-
-      **Tango Package**
-
-
-      - Early Bird rate until January 31, 2027: €350 per person
-
-      - From February 1, 2027: €390 per person
-
-
-      **Hotel Offer**
-
-
-      - €660 per person in a double room, including half board.
-
-      - Special offer valid until April 30, 2027.
-
-
-      After registering, we’ll send you a code that you can use to book the
-      hotel at this special rate.
-
-
-      ### Organization and Registration
+      **Organization and Registration:**
 
 
       [info@tangoescape.com](mailto:info@tangoescape.com)
 
 
-      Book your spot now and get ready for an unforgettable week!
+      **Price Details:**
 
 
-      Don’t miss this opportunity to combine your passion for tango with the
-      unique charm of Crete.
+      - **Tango package:** €350 Early Bird until **Jan 31, 2027**;  €390 from
+      Feb 01, 2027
+
+      - **Hotel Offers valid until April 30, 2027:** €660 p/Person for a double
+      room with half board (After registration, we will provide you with a code
+      to receive these special offers).
 
 
-      If you’d like more information or wish to register, feel free to contact
-      us!
+      Book your spot now and prepare for a dream week!  
+
+      Don’t miss the chance to combine your passion for tango with the charm of
+      Crete!
 
 
-      We look forward to dancing with you and sharing this magical adventure
-      together!
+      For more information and bookings, please contact us!
+
+
+      We look forward to dancing with you and experiencing this magical
+      adventure together!
+
+
+      See you soon!
+
+
+      Gaia and Gustavo
 ---
-Vom 6. bis zum 12. September 2027 erwartet dich ein einzigartiges Abenteuer zwischen kristallklarem Meer, faszinierender Kultur und der Leidenschaft des Tangos.
+**Begleite uns auf eine unvergessliche Tangoreise nach Kreta!**
 
-Wir laden dich ein, Teil dieser exklusiven Reise zu werden, die speziell für Tanzliebhaber und alle gestaltet wurde, die die natürliche Schönheit Kretas entdecken möchten.
+Vom **06 bis 12. September 2027** erlebe ein einzigartiges Abenteuer zwischen kristallklarem Meer, faszinierender Kultur und der Leidenschaft des Tangos. Wir laden dich ein, an dieser exklusiven Reise teilzunehmen, die speziell für Tanzliebhaber und Freunde der natürlichen Schönheit Kretas gestaltet wurde.
 
-### Was dich erwartet
+**Was dich erwartet:**
 
-- **Unterkunft im Doppelzimmer** im wunderschönen Kernos Beach Hotel & Bungalows, inklusive Halbpension (Frühstück und Abendessen).
-- **12 Stunden Tango-Unterricht und eine Praktika** mit Gaia und Gustavo, um deinen Tanzstil zu verfeinern, Neues zu lernen und gemeinsam Spaß zu haben.
-- **4 Milongas**, bei denen du die Magie des Tangos in einer ganz besonderen Atmosphäre genießen kannst.
-- **Zeit zum Entdecken und Genießen:** Erkunde die Insel, schließe neue Freundschaften und tauche in eine traditionsreiche Kultur ein. Wir nehmen uns Zeit für Ausflüge, Massagen und entspannte Stunden am Strand!
+- **Unterkunft im Doppelzimmer** im wunderschönen **Kernos Beach Hotel & Bungalows** mit **Halbpension** (Frühstück und Abendessen inklusive)
+- **12 Stunden Tango-Unterricht** und **1 angeleitete Praktika** mit **Gaia und Gustavo**, um deinen Stil zu verbessern und gemeinsam Spaß zu haben
+- **5 Milongas**, um die Magie des Tangos in einer ganz besonderen Atmosphäre zu genießen
+- Eine einmalige Gelegenheit, die Insel zu erkunden, neue Freundschaften zu schließen und in eine Kultur einzutauchen, die reich an Traditionen ist. Wir lassen uns Zeit für Ausflüge, Massagen und den Strand!
 
-### Reisedetails
+**Reisedetails:**
 
-- **Datum:** 6.–12. September 2027
-- **Ort:** Kernos Beach Hotel & Bungalows, Malia 700 07, Kreta, Griechenland. Das Hotel liegt direkt an einem wunderschönen Sandstrand und verfügt über einen weitläufigen Garten, eine Minigolfanlage und einen Tennisplatz.
-- **Verpflegung:** Halbpension (Frühstück und Abendessen inklusive)
-- **Flughafen:** Der nächstgelegene Flughafen ist Heraklion, etwa 25 Minuten vom Hotel entfernt.
-- **Mindestteilnehmerzahl:** Die Reise findet ab 5 teilnehmenden Paaren statt.
+- **Daten:** 06.  – 12. September 2027
+- **Ort:** **Kernos Beach Hotel & Bungalows**, Malia 700 07, Kreta, Griechenland (Direkt am schönen Sandstrand gelegen, mit einem großen Garten, Minigolfanlage und Tennisplatz)
+- **Verpflegung:** Halbpension (Frühstück und Abendessen)
+- **Flughafen:** Der nächstgelegene Flughafen ist der **Flughafen Heraklion**, ca. 25 Minuten vom Hotel entfernt.
 
-### Preise
+Die Reise findet statt ab **10 Personen**.
 
-**Tango-Paket**
-
-- Early Bird bis zum 31. Januar 2027: 350 €
-- Ab dem 1. Februar 2027: 390 €
-
-**Hotelangebot**
-
-- 660 € pro Person im Doppelzimmer inklusive Halbpension
-- Das Sonderangebot ist bis zum 30. April 2027 gültig.
-
-Nach deiner Anmeldung senden wir dir einen Code, mit dem du das Sonderangebot für das Hotel buchen kannst.
-
-### Organisation und Anmeldung
-
+**Organisation und Anmeldung:**  
 [info@tangoescape.com](mailto:info@tangoescape.com)
 
-Buche jetzt deinen Platz und freue dich auf eine traumhafte Woche!
+---
 
-Verpasse nicht die Gelegenheit, deine Leidenschaft für Tango mit dem einzigartigen Charme Kretas zu verbinden.
+**Preisdetails:**
 
-Wenn du weitere Informationen benötigst oder dich anmelden möchtest, kontaktiere uns gerne!
+- **Tango-Paket:** €350 Early Bird bis **31. Januar 2027**; €390 ab **01. Februar 2027**
+- **Hotel Angebote gültig bis zum 30.4.2027:** €660 pro Person für ein Doppelzimmer mit Halbpension  (Nach der Anmeldung senden wir dir einen Code, um diese Sonderangebote zu erhalten).**Buche jetzt deinen Platz** und bereite dich auf eine traumhafte Woche vor!  
+Verpasse nicht die Gelegenheit, deine Leidenschaft für Tango mit dem Charme Kretas zu verbinden!
 
-Wir freuen uns darauf, mit dir zu tanzen und dieses unvergessliche Abenteuer gemeinsam zu erleben!
+Für weitere Informationen und Buchungen, kontaktiere uns bitte!
+
+Wir freuen uns darauf, mit dir zu tanzen und dieses magische Abenteuer gemeinsam zu erleben!
+
+Bis bald!
+
+Gaia und Gustavo

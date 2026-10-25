@@ -2,7 +2,7 @@
 title: Tango Escape - Wilhelmsthal
 date: 2027-05-06T18:00:00
 end: 2027-05-09T15:00:00
-teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino
+teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino, Manon Greiner
 venue: Kulturgut Wilhelmsthal
 address: Wilhelmsthal 20, 99834 Gerstungen-Marksuhl
 abroad: false
@@ -215,7 +215,7 @@ Haupthaus
 3-Bett-Zimmer mit eigenem Bad 160 € pro Person (nur 1 verfügbar, wenn möglich)  
 4-Bett-Zimmer mit eigenem Bad 140 € pro Person (nur 1 verfügbar, wenn möglich)
 
- 
+
 
 Infos und Anmeldung: [info@tangoescape.com](mailto:info@tangoescape.com)
 

@@ -2,7 +2,7 @@
 title: Tango Escape - La Dersentina
 date: 2027-10-07T18:00:00
 end: 2027-10-10T15:00:00
-teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino
+teachers: Leandro Furlan, Gaia Pisauro, Gustavo Bronzino, Manon Greiner
 venue: La Dersentina
 address: Dersentiner Allee 1, 18279 Lalendorf
 abroad: false
@@ -18,7 +18,7 @@ translations:
     teaser: Four days of tango, nature, and good food — just two hours from Berlin
       and Hamburg.
     audience: Single/couple
-    body: >+
+    body: >-
       We are delighted to invite you back to **La Dersentina in Lalendorf!**
 
 
@@ -145,11 +145,11 @@ translations:
       Includes:
 
 
-      - 3.5 hours of tango seminars
+      - 3,5 hours of tango seminars
 
-      - 1 guided practica
+      - 1,5 hours guided practica
 
-      - 1 milonga
+      - milonga
 
       - Breakfast, lunch, cake, and dinner
 
@@ -163,7 +163,7 @@ translations:
       *Bed linen is included. Please bring your own towels.*
 
 
-      ### **Main House**
+      ### **LA DERSENTINA – Main House**
 
 
       - **Twin room with private bathroom:** €250 per person (only 3 rooms
@@ -187,8 +187,23 @@ translations:
       - **Twin room:** €190 per person
 
       - **Single room:** €250 per person (only 3 rooms available)
+
+        
+      We can’t wait to welcome you back for another wonderful Tango Escape!
+
+
+      **See you at La Dersentina!**
+
+
+      ## **INFORMATION & REGISTRATION**
+
+
+      [info@tangoescape.com](mailto:info@tangoescape.com)
+
+
+      Organised by **Gustavo Bronzino & Gaia Pisauro**
 ---
-Wir freuen uns sehr, euch wieder zu unserem **Tango Escape in der wunderschönen La Dersentina in Lalendorf** einzuladen!
+Wir freuen uns sehr, euch wieder zu unserem **Tango Escape in der charmanten La Dersentina in Lalendorf** einzuladen!
 
 Nur 50 Minuten von Rostock und etwa 2 Stunden von Berlin oder Hamburg entfernt, ist La Dersentina ein wunderbarer Ort, um Tango, Natur und gemeinsame Zeit zu genießen.
 
@@ -209,11 +224,11 @@ Unsere Idee ist ganz einfach: viel Tango tanzen, gemeinsam lernen, Neues ausprob
 18:00 Uhr – Anreise  
 19:30 Uhr – Gemeinsames Abendessen  
 20:30–21:30 Uhr – Angeleitete Praktika mit Leandro & Gaia  
-Ab 21:30 Uhr – Milonga mit DJ Gaia
+Ab 21:30 Uhr – Milonga mit DJ Gustavo
 
 ### **FREITAG | 8. Oktober**
 
-09:00–10:00 Uhr – Somatic Yoga (10 € zusätzlich pro Person)  
+09:00–10:00 Uhr – Somatisches Yoga (10 € zusätzlich pro Person)  
 09:30–10:30 Uhr – Frühstück  
 11:00–13:00 Uhr – Seminar mit Leandro & Gaia  
 13:30 Uhr – Mittagessen  
@@ -225,15 +240,19 @@ Ab 21:30 Uhr – Milonga mit DJ Leandro
 
 ### **SAMSTAG | 9. Oktober**
 
-09:00–10:00 Uhr – Somatic Yoga (10 € zusätzlich pro Person)  
+09:00–10:00 Uhr – Somatisches Yoga (10 € zusätzlich pro Person)  
 09:30–10:30 Uhr – Frühstück  
 11:00–13:00 Uhr – Seminar mit Leandro & Gaia  
 13:30 Uhr – Mittagessen  
-15:00–16:30 Uhr – Angeleitete
+15:00–16:30 Uhr – Angeleitete Praktika mit Gustavo  
+16:00 Uhr – Kaffee & Kuchen  
+17:00–18:30 Uhr – Seminar mit Leandro & Gaia  
+19:30 Uhr – Gemeinsames Abendessen  
+Ab 21:30 Uhr – Milonga mit DJ Gustavo
 
 ### **SONNTAG | 10. Oktober**
 
-09:00–10:00 Uhr – Somatic Yoga (10 € zusätzlich pro Person)  
+09:00–10:00 Uhr – Somatisches Yoga (10 € zusätzlich pro Person)  
 09:30–14:00 Uhr – Brunch  
 11:00–13:00 Uhr – Praktika mit Leandro, Gaia & Gustavo  
 Ab 13:00 Uhr – Freies Tanzen  
@@ -255,9 +274,9 @@ Im Preis enthalten sind alle Tangoseminare, Praktikas, Milongas und die Verpfleg
 
 Im Preis enthalten:
 
-- 3,5 Stunden Tangoseminare
-- 1 angeleitete Praktika
-- 1 Milonga
+- 3,5 Stunden Tango Seminare
+- 1,5 Stunden angeleitete Praktika
+- Milonga
 - Frühstück, Mittagessen, Kaffee & Kuchen und Abendessen
 
 Somatic Yoga ist optional und kostet 10 € pro Einheit.
@@ -266,7 +285,7 @@ Somatic Yoga ist optional und kostet 10 € pro Einheit.
 
 *Bettwäsche ist inklusive. Bitte bringt eure eigenen Handtücher mit.*
 
-### **Haupthaus**
+### **LA DERSENTINA – Haupthaus**
 
 - **Doppelzimmer mit eigenem Bad:** 250 € pro Person (nur 3 Zimmer verfügbar)
 - **Doppelzimmer:** 220 € pro Person
@@ -276,8 +295,16 @@ Somatic Yoga ist optional und kostet 10 € pro Einheit.
 
 *(Nur verfügbar, wenn das Haupthaus ausgebucht ist)*
 
-*350 Meter von Haupthaus entfernt*
+*350 Meter von La Dersentina entfernt*
 
 - **Doppelzimmer:** 190 € pro Person
 - **Einzelzimmer:** 250 € pro Person (nur 3 Zimmer verfügbar)
+
+ 
+
+## **INFORMATIONEN & ANMELDUNG**
+
+++[info@tangoescape.com](mailto:info@tangoescape.com)++
+
+Organisation: **Gustavo Bronzino & Gaia Pisauro**
 

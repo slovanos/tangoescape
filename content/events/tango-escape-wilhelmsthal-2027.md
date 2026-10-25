@@ -18,7 +18,8 @@ translations:
     teaser: In the heart of Germany, where you can enjoy tango and nature!
     audience: Single/couple
     body: >-
-      We are glad to invite you  to our location in WILHELMSTHAL bei Eisenach!
+      We are glad to invite you  to our beautiful location in WILHELMSTHAL near
+      Eisenach!
 
 
       in the middle of Germany, here you can enjoy tango and nature!!  
@@ -26,8 +27,8 @@ translations:
       We will dance from Thursday 06th Mai to Sunday 9th Mai 2027.
 
 
-      We would like to keep a closed group who love tango and want to dance in a
-      happy atmosphere!  
+      We would like to have a group who love tango and want to dance in a happy
+      atmosphere!  
 
       Our idea is to dance and learn a lot, cook and drink together!!
 
@@ -55,7 +56,7 @@ translations:
       FRIDAY
 
 
-      09:00 – 10:00 Somatisches Yoga (10€ pro Person extra)  
+      09:00 – 10:00 Somatic Yoga (10€ pro Person extra)  
 
       09:30 – 10:30 Breakfast  
 
@@ -77,7 +78,7 @@ translations:
       SATURDAY
 
 
-      09:00 – 10:00 Somatisches Yoga (10€ pro Person extra)  
+      09:00 – 10:00 Somatic Yoga (10€ pro Person extra)  
 
       09:30 – 10:30 Breakfast  
 
@@ -98,7 +99,7 @@ translations:
 
       SUNDAY  
 
-      09:00 – 10:00 Somatisches Yoga (10€ pro Person extra)  
+      09:00 – 10:00 Somatic Yoga (10€ pro Person extra)  
 
       09:30 – 14:00 Brunch  
 
@@ -134,7 +135,7 @@ translations:
       Kulturgut Wilhelmsthal, Wilhelmsthal 20 99834 Marksuhl
 
 
-      **Haupt Haus**  
+      **Main Haus**  
 
       2 beds room with privat bath 220€ per person (only 8 available )  
 
@@ -150,7 +151,7 @@ translations:
 
       Org.: Gustavo Bronzino und Gaia Pisauro
 ---
-Wir freuen uns, Ihr in unsere Special Location in WILHELMSTHAL bei Eisenach einzuladen!
+Wir freuen uns, euch in unsere wunderschöne Location in Wilhelmsthal bei Eisenach einzuladen!
 
 mitten in Deutschland, hier kann man Tango und Natur genießen!!  
 Wir tanzen von Donnerstag, 06. Mai bis Sonntag, 09. Mai 2027.
@@ -171,6 +172,7 @@ DONNERSTAG
 
 FREITAG  
 09:00 – 10:00 Somatisches Yoga (10€ pro Person extra)  
+09:30 – 10:30 Frühstück  
 11:30 – 13:30 Seminar mit Leandro y Gaia  
 13:30 Mittagessen  
 15:00 – 16:30 Geführte Praktika mit Gustavo  
@@ -181,6 +183,7 @@ FREITAG
 
 SAMSTAG  
 09:00 – 10:00 Somatisches Yoga (10€ pro Person extra)  
+09:30 – 10:30 Frühstück  
 11:30 – 13:30 Seminar mit Leandro y Gaia  
 13:30 Mittagessen  
 15:00 – 16:30 Geführte Praktika mit Gustavo  
@@ -212,7 +215,7 @@ Haupthaus
 3-Bett-Zimmer mit eigenem Bad 160 € pro Person (nur 1 verfügbar, wenn möglich)  
 4-Bett-Zimmer mit eigenem Bad 140 € pro Person (nur 1 verfügbar, wenn möglich)
 
-
+ 
 
 Infos und Anmeldung: [info@tangoescape.com](mailto:info@tangoescape.com)
 

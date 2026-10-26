@@ -8,6 +8,7 @@ buildFuture = true           # events are dated in the future — they must be b
 enableRobotsTXT = true
 cleanDestinationDir = true   # remove stale files from public/ on every build
 disableKinds = ["taxonomy", "term", "rss"]
+enableGitInfo = true         # sitemap lastmod from the last commit, not the event date
 
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false   # German at /, English at /en/
@@ -64,3 +65,6 @@ defaultContentLanguageInSubdir = false   # German at /, English at /en/
   calendarDomain = "tangoescape.com"
   # true keeps every page out of search engines (preview).
   noindex = false
+
+[frontmatter]
+  lastmod = [":git", "lastmod"]   # never fall back to the (future) event date

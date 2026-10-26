@@ -47,6 +47,8 @@ jobs:
 
       - name: Check out
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # full history for enableGitInfo (sitemap lastmod)
 
       - name: Configure Pages
         id: pages

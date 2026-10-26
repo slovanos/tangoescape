@@ -1,3 +1,3 @@
 ---
-title: Reise
+title: Reisen
 ---

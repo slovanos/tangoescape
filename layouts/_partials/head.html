@@ -27,7 +27,8 @@
 <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/png">
 {{- with site.GetPage "/events" }}
 {{- with .OutputFormats.Get "calendar" }}
-<link rel="alternate" type="text/calendar" title="{{ site.Title }}" href="{{ .Permalink }}">
+{{- /* .Permalink is webcal://, which Go templates replace with #ZgotmplZ */}}
+<link rel="alternate" type="text/calendar" title="{{ site.Title }}" href="{{ .RelPermalink | absURL }}">
 {{- end }}
 {{- end }}
 <link rel="preload" href="{{ "fonts/bodoni-moda-latin-standard-italic.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>

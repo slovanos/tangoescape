@@ -174,22 +174,19 @@ main, .site-footer {
 .event-row {
   position: relative;
   display: grid;
-  grid-template-columns: 13rem minmax(0, 1fr) auto;
+  grid-template-columns: clamp(14rem, 22vw, 17.5rem) minmax(0, 1fr) auto; /* fits "24.–30. September" at the date size */
   gap: 0.5rem 2rem;
   align-items: start;
   padding-block: 1.75rem;
   border-bottom: 1px solid var(--line);
 }
-.date-block { margin: 0; line-height: 1; }
-.date-days {
-  display: block;
+.date-block {
+  margin: 0; line-height: 1.1;
   font-family: var(--display); font-style: italic; font-weight: 500;
-  font-size: clamp(2.4rem, 4vw, 3rem);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
   font-variant-numeric: lining-nums;
   color: var(--accent);
-  white-space: nowrap;
 }
-.date-months { display: block; margin-top: 0.4rem; font-size: 1rem; color: var(--ink-soft); }
 
 .event-row-title { font-family: var(--display); font-style: italic; font-size: 1.6rem; line-height: 1.15; }
 .event-row-title a { text-decoration: none; }
@@ -206,17 +203,16 @@ main, .site-footer {
 
 /* The next event gets the stage: the date stands above it like on a poster */
 .event-row.is-next { padding-block: 2.25rem 2.5rem; grid-template-columns: minmax(0, 1fr) auto; }
-.event-row.is-next .date-block { grid-column: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 1.25rem; }
+.event-row.is-next .date-block { grid-column: 1; font-size: clamp(2.2rem, 5vw, 3.5rem); }
 .event-row.is-next .event-row-body { grid-column: 1; }
 .event-row.is-next .event-row-image { grid-column: 2; grid-row: 1 / span 3; }
 .event-row.is-next .next-label { grid-column: 1; margin: 0; }
 .event-row.is-next .next-label { display: block; }
-.event-row.is-next .date-days { font-size: clamp(3.4rem, 8vw, 6rem); }
 .event-row.is-next .event-row-title { font-size: clamp(1.9rem, 4vw, 2.7rem); }
 .event-row.is-next .event-row-teaser { font-size: 1.15rem; }
 .event-row.is-next .event-row-image { width: clamp(9rem, 22vw, 16rem); }
 
-.event-list-past .date-days { color: var(--ink-soft); }
+.event-list-past .date-block { color: var(--ink-soft); }
 
 .soldout { color: var(--coral); }
 
@@ -268,11 +264,10 @@ details.past summary::marker { color: var(--accent); }
 .back-link a::before { content: "‹ "; color: var(--accent); }
 
 .event-header { margin: clamp(1.5rem, 5vw, 3rem) 0 2.5rem; }
-.event-header .date-block { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 1.25rem; margin-bottom: 0.75rem; }
-.event-header .date-days { font-size: clamp(3.5rem, 8vw, 6rem); }
+.event-header .date-block { margin-bottom: 0.75rem; font-size: clamp(2.2rem, 5vw, 3.5rem); }
 .event-title { font-family: var(--display); font-style: italic; font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.02; max-width: 16em; }
 .event-teaser { margin: 1rem 0 0; font-size: 1.2rem; color: var(--ink-soft); max-width: 32em; }
-.event.is-past .date-days { color: var(--ink-soft); }
+.event.is-past .date-block { color: var(--ink-soft); }
 
 .past-note { display: inline-block; padding: 0.5rem 1rem; border: 1px solid var(--coral); color: var(--coral); border-radius: 3px; }
 
@@ -351,7 +346,7 @@ details.past summary::marker { color: var(--accent); }
    screens, dashes included. Pinning the optical size low and the weight up
    keeps the Bodoni character with strokes that stay visible. Never use the
    display face for running text. */
-.hero-title, .section-heading, .page-title, .date-days,
+.hero-title, .section-heading, .page-title, .date-block,
 .event-row-title, .event-title, details.past summary, .prose h2,
 .footer-heading, .footer-mail {
   font-variation-settings: "opsz" 11;

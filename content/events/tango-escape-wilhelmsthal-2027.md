@@ -50,7 +50,7 @@ translations:
 
       20:30 – 21:30 Guided Practica with Leandro y Gaia  
 
-      21:30 Milonga with DJ Gaia
+      21:30 Milonga with DJ Gustavo
 
 
       FRIDAY
@@ -168,7 +168,7 @@ DONNERSTAG
 18:00 Ankunft  
 19:30 Abendessen  
 20:30 – 21:30 Geführte Praktika mit Leandro y Gaia  
-21:30 Milonga mit DJ Gaia
+21:30 Milonga mit DJ Gustavo
 
 FREITAG  
 09:00 – 10:00 Somatisches Yoga (10€ pro Person extra)  
